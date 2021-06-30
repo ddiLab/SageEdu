@@ -1,5 +1,5 @@
 """
-This script takes readings humidity, air pressure, temperature,
+This script takes readings of humidity, air pressure, temperature,
 and gas resistance every minute for an hour and saves it to a csv file.
 """
 
