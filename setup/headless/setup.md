@@ -12,8 +12,8 @@ Getting Started with Jetson Nano Developer Kit</a> website to write the image to
     1) The microSD card slot is located on the underside of the Nano
   <INSERT IMAGE HERE>
   
-3) Jumper the J48 Power Selector Header Pins
-  <INSERT IMAGES>
+3) Jumper the J48 Power Selector Header Pins  
+  <img alt='pins jumpered'  src='./images/IMG_3345.jpg'></img>
   
 4)  Connect the USB WiFi dongle to one of the Nano's USB ports
   <INSERT IMAGE>
