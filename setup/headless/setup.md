@@ -13,7 +13,7 @@ Getting Started with Jetson Nano Developer Kit</a> website to write the image to
   <INSERT IMAGE HERE>
   
 3) Jumper the J48 Power Selector Header Pins  
-  <img alt='pins jumpered'  src='./images/octocat.png'></img>
+  <img alt='test image not found'  src=''></img>
   
 4)  Connect the USB WiFi dongle to one of the Nano's USB ports
   <INSERT IMAGE>
@@ -23,13 +23,19 @@ Getting Started with Jetson Nano Developer Kit</a> website to write the image to
   
 6) Follow the instructions on <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup-headless">Nvidia's website</a> 
 to set up the Nano according to your operating system
+    
+    <img src='./images/welcome.png'></img>
 
 7) Go through the setup process of license agreements, language, time zone, etc
     1) Leave the partition size to the default value
 
 8) When you get to the Network Configuration Screen, select the `wlan0` option
+  
+  <img src='./images/network-config.png'></img>
 
 9) On the next screen select the `WEP/Open Network` option
+
+  <img src='./images/network-config-wpa.png'></img>
 
 10) Leave the field blank and hit henter
 
