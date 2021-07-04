@@ -23,8 +23,8 @@ Before you continue you must first be in your Nano's terminal which can be done 
   `screen -S [NAME]`
     1. Where `[NAME]` is replaced by a name you give to the screen session  
     2. You should see a screen that looks like this:  
-    <img alt='screen prompt' src=''></img>
-    3. Follow the prompts on screen
+    <img alt='Image of Screen Prompt' src='./images/Screen Prompt.png'></img>
+    3. Follow the on screen prompt
   
 4. Now print a list of all the screen sessions that are running using the command from step 2.
     1.  You should now see something like this:  
