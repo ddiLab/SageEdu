@@ -13,30 +13,38 @@ Getting Started with Jetson Nano Developer Kit</a> website to write the image to
   <INSERT IMAGE HERE>
   
 3) Jumper the J48 Power Selector Header Pins  
-  <img alt='pins jumpered'  src='./images/IMG_3345.jpg'></img>
+    1. Pins not jumpered:  
+  <img alt='Not Jumpered Image'  src='./images/non-jumpered.jpeg'></img>
+  
+    2. Pins Jumpered:
+  <img alt='Jumpered Image'  src='./images/jumpered.jpeg'></img>
   
 4)  Connect the USB WiFi dongle to one of the Nano's USB ports
-  <INSERT IMAGE>
-  
-5) Connect your computer to the NAno's micro USB port
-  <INSERT IMAGE>
+
+5) Connect your computer to the Nano via it's micro USB port
   
 6) Follow the instructions on <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup-headless">Nvidia's website</a> 
 to set up the Nano according to your operating system
+    
+    <img src='./images/welcome.png'></img>
 
 7) Go through the setup process of license agreements, language, time zone, etc
     1) Leave the partition size to the default value
 
 8) When you get to the Network Configuration Screen, select the `wlan0` option
+  
+  <img src='./images/network-config.png'></img>
 
 9) On the next screen select the `WEP/Open Network` option
+
+  <img src='./images/network-config-wpa.png'></img>
 
 10) Leave the field blank and hit henter
 
 11) It will say that it failed, just select the option to set it up later
 
 12) Enter a name for the device
-    1) This will be what we will reffer to as the nano's name
+    1) This will be what we will reffer to as the Nano's name
     
 13) Leave the next option to the default value
 
@@ -46,12 +54,12 @@ Now let's setup the network.
 14) Make note of the SSID of the network you want to connect to by running the following command:  
   `nmcli dev wifi list`
   
-15) Connect to the wifi network by running the following command:
+15) Connect to the wifi network by running the following command:  
   `sudo nmcli dev wifi connect [NETWORK SSID] password [NETWORK PASSWORD]`
     1) Where `[NETWORK SSID]` is replaced by the network's SSID noted in the last step
     and `[NETWORK PASSWORD]` is replaced by the network's password
     
-16) Ping google.com to make sure its connected by running the following command:
+16) Ping google.com to make sure its connected by running the following command:  
   `ping google.com`
       1) Use `control` +  `c` to stop the pinging
 
@@ -78,7 +86,7 @@ Now let's setup the network.
 
 24) In a terminal on your computer connect to the Nano via ssh by running the following command:  
   `ssh [USERNAME]@[NANO NAME].local`
-    1) Where `[USERNAME]` is replaced by your username on the Nano, and `[NANO NAME]` is replaced by the Name you gave the Nano in step 12
+    1) Where `[USERNAME]` is replaced by your username on the Nano, and `[NANO NAME]` is replaced by the name you gave the Nano in step 12
     2) This is how you will be connecting to the Nano from now on!
     
 25) Install jupyterlab by running the following command:  

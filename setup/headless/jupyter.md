@@ -3,6 +3,9 @@
 You must be coneected to your Nano via ssh:  
   `ssh [USERNAME]@[NANO NAME].local`
   
+If you have't already, install jupyterlab by running the following command:  
+  `python3 -m pip install jupyterlab`
+  
 1) Start a Jupyter Notebook by running the following command:  
   `jupyter notebook --no-browser --port 8080`
     1) The `--no-browser` flag tells jupyter no to open up a browser   
