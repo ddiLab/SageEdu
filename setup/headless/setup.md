@@ -13,13 +13,15 @@ Getting Started with Jetson Nano Developer Kit</a> website to write the image to
   <INSERT IMAGE HERE>
   
 3) Jumper the J48 Power Selector Header Pins  
-  <img alt='test image not found'  src=''></img>
+    1. Pins not jumpered:  
+  <img alt='Not Jumpered Image'  src='./images/non-jumpered.jpeg'></img>
+  
+    2. Pins Jumpered:
+  <img alt='Jumpered Image'  src='./images/jumpered.jpeg'></img>
   
 4)  Connect the USB WiFi dongle to one of the Nano's USB ports
-  <INSERT IMAGE>
-  
+
 5) Connect your computer to the Nano via it's micro USB port
-  <INSERT IMAGE>
   
 6) Follow the instructions on <a href="https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup-headless">Nvidia's website</a> 
 to set up the Nano according to your operating system
