@@ -48,6 +48,10 @@ Read in WAV File:
 
 <h2>Directory Contents:</h2>
 
+<h2>setup.md</h2>
+
+* Contains instructions on how to setup the microphone with the Nano
+
 <h2>readingWavFiles.ipynb</h2>
 
 * Instructions and code demonstrating how to read WAV files into a Python program
