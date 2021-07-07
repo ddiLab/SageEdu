@@ -7,6 +7,8 @@ Setting up the Nano headful allows it to be used by interacting with a GUI.
 
 Headless mode only requires the use of another computer. Setting up the Nano headless will require that the Nano be used solely through a command line interface.
 
+---
+
 <h2>Directory Contents:</h2>
 
 <h2>headful/</h2>
