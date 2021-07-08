@@ -10,9 +10,23 @@ This directory contains instructions on how to set up the microphone with the Je
 
 * Instructions and code demonstrating how to record WAV files in a Python program using the microphone
 
+<h2>readAudio2.ipynb</h2>
+
+* Note: requires virtual environment setup
+* Instructions and code demonstrating how to read WAV files in a Python program 
+
+<h2>writeAudio2.ipynb</h2>
+
+* Note: requires virtual environment setup
+* Instructions and code demonstrating how to record WAV files in a Python program using the microphone
+
 <h2>sample.wav</h2>
 
 * A sample WAV file for use in the `readingWavFiles` notebook
+
+<h2>waves.wav</h2>
+
+* A sample WAV file for use in the `readAudio2` notebook
 
 <h2>readme.md</h2>
 
