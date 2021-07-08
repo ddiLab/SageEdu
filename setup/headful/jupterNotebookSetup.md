@@ -7,4 +7,4 @@
 	1. Exit all browsers and type "Ctrl + C" in the terminal to exit out of the notebook
 	2. Once Jupyter Notebook is no longer running, open a browser window, make that browser the default browser, and rerun the command from step 3 
 	3. Note: It might be that a window from the default browser must always be open before opening Jupyter Notebook
-6. To exit out of Jupyter Notebook, type "Ctrl + C" in the terminal where notebook is running
+6. To exit out of Jupyter Notebook, type "Ctrl + C" in the terminal where the notebook is running
