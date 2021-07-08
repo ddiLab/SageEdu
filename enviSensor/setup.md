@@ -25,3 +25,5 @@ The black wire should connect to the ground pin and the red wire should connect 
     3. You can press `control` + `c` to stop the example
     
 <h3>The enviornmental sensor is all set up now and ready for you to use!</h3>
+
+See `enviSensor/enviSensorDemo.ipynb` for more information on the sensor including how to interact with it using Python.
