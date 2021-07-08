@@ -9,6 +9,15 @@ Setting up the Nano headful allows it to be used via a GUI.
 
 * Contains instructions on how to perform the basic initial setup of the Nano
 
+<h2>setupVirtualEnvironment.md</h2> 
+
+* Note: optional method for setting up python work space 
+* Contains the necessary steps to create a virtual environment, installing Jupyter Notebook, and instructions on how to install future packages
+
+<h2>/images</h2> 
+
+* A directory containing images referenced in the instructions
+
 <h2>readme.md</h2>
 
 * This file
