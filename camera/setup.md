@@ -1,6 +1,5 @@
 <h1>Camera Setup</h1>
 
-<<<<<<< HEAD
 1. Plug in the camera's power adapter into an outlet and plug in the camera.
 2. Plug one end of the ethernet cord into the camera and the other into the Nano.
 3. Install `tshark` on the Nano by running the following command:  
@@ -21,4 +20,3 @@
 <h2>Now the camera is all set up!</h2>
 
 See `camera/videoStream.ipynb` to learn how to stream video from the camera using Python.
->>>>>>> main
