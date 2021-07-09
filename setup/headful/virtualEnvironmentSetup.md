@@ -16,5 +16,6 @@
 	3. Use your arrow keys to go to the bottom of the file
 	4. Add the command `export OPENBLAS_CORETYPE=ARMV8` at the very bottom, and you can choose to add a comment on top of it saying "Resolves illegal construction error and package installation errors"
 	5. Click the "escape" key on your keyboard, type ":wq", and hit "enter" or "return" on your keyboard
+	6. Exit out of all terminal windows because the change only takes place in new terminal windows. 
 9. You now have a working virtual environment!
 	1. **Important:** Never install packages using `(my_project_env)user@host:~$ sudo ...` commands within the virtual environment because it will cause dependency issues, so instead, install packages with `(my_project_env)user@host:~$ pip install ...`
