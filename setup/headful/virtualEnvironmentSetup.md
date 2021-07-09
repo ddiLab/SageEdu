@@ -2,9 +2,9 @@
 1. Within the terminal, install python 3 and related packages using the command `$ sudo apt install python3-pip python3-dev`
 2. Make sure to have every package on your system up-to-date by running the commands `$ sudo apt update` and `$ sudo apt upgrade`, so there aren't any dependency issues
 3. Then run `$ python3 -m pip install --upgrade pip` to upgrade pip
-4. Run the command `$ sudo apt install python3-venv` to install the ability to construct a virtual environment
+4. Run the command `$ sudo -H pip3 install virtualenv` to install the ability to construct a virtual environment
 5. Create a directory on your computer related to all Sage tasks (e.g., `/sageWorkspace`). This directory will store your virtual environment and Github repo (if you are using one)
-6. Use the command `$ python3 -m venv /my_project_env` within `/sageWorkspace`, where `/my_project_env` is the name of the virtual environment you want to create, so make sure to name it appropriately 
+6. Use the command `$ virtualenv /my_project_env` within `/sageWorkspace`, where `/my_project_env` is the name of the virtual environment you want to create, so make sure to name it appropriately 
 	1. **Important:** Do not ever edit this folder
 7. Activate the environment with the command `$ source my_project_env/bin/activate`
 	1. Your command prompt should read something similar to `(my_project_env)user@host:~/sageWorkspace$`
