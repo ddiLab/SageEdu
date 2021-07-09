@@ -10,12 +10,13 @@
 	1. Your command prompt should read something similar to `(my_project_env)user@host:~/sageWorkspace$`
 	2. **Note:** Always activate your virtual environment whenever you start working with the packages you install within it and for Sage related tasks. And deactivate it with `(my_project_env)user@host:~$ deactivate` when you are done working.
 	3. With this virtual environment, site packages and dependencies can be organized separate from the rest of the machine, so always be conscious of where you are working
-8. We will now add an important command to the startup files of the terminal, so that packages install and run correctly in the virtual environment
+8. Run the command `(my_project_env)user@host:~$ python3 -m pip install --upgrade pip`
+9. We will now add an important command to the startup files of the terminal, so that packages install and run correctly in the virtual environment
 	1. Deactivate your virtual environment and run the command `$ vi ~/.bashrc` 
 	2. Click the letter "i" on your keyboard to go into insert mode (able to edit the file)
 	3. Use your arrow keys to go to the bottom of the file
 	4. Add the command `export OPENBLAS_CORETYPE=ARMV8` at the very bottom, and you can choose to add a comment on top of it saying "Resolves illegal construction error and package installation errors"
 	5. Click the "escape" key on your keyboard, type ":wq", and hit "enter" or "return" on your keyboard
 	6. Exit out of all terminal windows because the change only takes place in new terminal windows. 
-9. You now have a working virtual environment!
+10. You now have a working virtual environment!
 	1. **Important:** Never install packages using `(my_project_env)user@host:~$ sudo ...` commands within the virtual environment because it will cause dependency issues, so instead, install packages with `(my_project_env)user@host:~$ pip install ...`
