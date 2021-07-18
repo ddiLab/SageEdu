@@ -7,6 +7,7 @@ and gas resistance every minute for an hour and saves it to a csv file.
 import bme680
 import time
 import numpy as np
+import sys
 
 sensor = bme680.BME680()
 
@@ -21,7 +22,7 @@ sensor.set_gas_heater_duration(150)
 sensor.select_gas_heater_profile(0)
 
 # Number of minutes to collect data
-run_time = 60
+run_time = int(sys.argv[1])
 
 # Number of minutes data has been collected
 live_time = 0
@@ -37,6 +38,8 @@ if sensor.get_sensor_data():
     if sensor.data.heat_stable:
         sensor.data.gas_resistance
 
+print('Collecting data for ' + str(run_time) + ' mins')
+        
 while live_time < run_time + 1:
     
     if sensor.get_sensor_data():
@@ -73,7 +76,7 @@ while live_time < run_time + 1:
 
 # Save all the data that was collected and stored in the data array
 # to a hourData.csv file
-np.savetxt("hourData.csv", 
+np.savetxt(str(sys.argv[2]), 
            data,
            delimiter=",",
            fmt='%1.3f')
