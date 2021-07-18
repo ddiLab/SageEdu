@@ -63,11 +63,13 @@ Air Pressure:
 
 * A python script that takes readings of humidity, air pressure, temperature, and gas resistance every minute for given amount of minutes and saves it to a csv file
 * Run the scrip by running the following command:  
-  `python3 collectData.py MINUTES FILE_NAME`  
-  * `MINUTES` is the number of minutes you want the script to run
+  `python3 collectData.py BURN_IN_MINS RUN_MINS FILE_NAME`  
+  * `BURN_IN_MINS` is the number of minutes you want the sensor to burn in
+    * The burn in proccess takes readings from the sensor once a second
+  * `MINS` is the number of minutes you want the script to run
   * `FILE_NAME` is the name of the file you want the date to be stored in. This should end in ".csv"
-* For example, run the following command to collect data for an hour and save it to a file called `hour_data.csv`:  
-    `python3 collectData.oy 60 'hour_data.csv'`
+* For example, run the following command to burn in for 20 minutes then collect data for an hour and save it to a file called `hour_data.csv`:  
+    `python3 collectData.py 20 60 'hour_data.csv'`
 
 <h2>hourData.csv</h2>
 
