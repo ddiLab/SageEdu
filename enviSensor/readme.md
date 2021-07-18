@@ -59,9 +59,15 @@ Air Pressure:
 
 * A jupyter notebook demonstrating and explaining how to take readings from the sensor
 
-<h2>collectDataHour.py</h2>
+<h2>collectData.py</h2>
 
-* A python script that takes readings of humidity, air pressure, temperature, and gas resistance every minute for an hour and saves it to a csv file
+* A python script that takes readings of humidity, air pressure, temperature, and gas resistance every minute for given amount of minutes and saves it to a csv file
+* Run the scrip by running the following command:  
+  `python3 collectData.py MINUTES FILE_NAME`  
+  * `MINUTES` is the number of minutes you want the script to run
+  * `FILE_NAME` is the name of the file you want the date to be stored in. This should end in ".csv"
+* For example, run the following command to collect data for an hour and save it to a file called `hour_data.csv`:  
+    `python3 collectData.oy 60 'hour_data.csv'`
 
 <h2>hourData.csv</h2>
 
