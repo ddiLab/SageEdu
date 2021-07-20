@@ -17,6 +17,7 @@
 	3. Use your arrow keys to go to the bottom of the file
 	4. Add the command `export OPENBLAS_CORETYPE=ARMV8` at the very bottom, and you can choose to add a comment on top of it saying "# resolves illegal construction error and package installation errors"
 	5. Click the "escape" key on your keyboard, type ":wq", and hit "enter" or "return" on your keyboard
-	6. Exit out of all terminal windows because the change only takes place in new terminal windows. 
+	6. Exit out of all terminal windows because the change only takes place in new terminal windows 
 10. You now have a working virtual environment!
-	1. **Important:** Never install packages using `(my_project_env)user@host:~$ sudo ...` commands within the virtual environment because it will cause dependency issues, so instead, install packages with `(my_project_env)user@host:~$ pip install ...` or any other way that does not run root permissions within the virtual environment. If in doubt, look up what each part of the command does. 
+	1. **Important:** Never install packages using `(my_project_env)user@host:~$ sudo ...` commands within the virtual environment because it will cause dependency issues, so instead, install packages with `(my_project_env)user@host:~$ pip install ...` or any other way that does not run root permissions within the virtual environment (e.g., `(my_project_env)user@host:~$ python3 -m pip install ...`). If in doubt, look up what each part of the command does 
+11. Everything that can be done by a system setup can be done within a virtual environment. Just make sure to intall the appropriate packages correctly
