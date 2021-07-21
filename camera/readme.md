@@ -18,6 +18,15 @@ This directory contains instructions on how to set up the camera with the Jetson
 
 * Code from the "Ip Webcam.ipynb" notebook on streaming video from the camera in python
 
+<h2>StreamWithThreading.ipynb</h2>
+
+* Contains code in streaming video from the camera using threads to boost the frame rate
+
+<h2>ThreadedStream.py</h2>
+
+* Code that captures frames from the camera using a thread
+* Used in the notebook "StreamWithThreading.ipynb"
+
 <h2>sampleVideo.MP4</h2>
 
 * A short video (approximately 10 seconds long) for use in the videoStream notebook
