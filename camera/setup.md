@@ -7,15 +7,15 @@
 
 1. On the Nano, open the system settings
 2. Go to Network
-3. Click on each of the connections labeld "Wired" and look for the one that says "Connected - 100Mb/s"
+3. Click on each of the connections labeld "Wired" and look for the one that says "Connected(ing) - 100Mb/s"
     1. This is the camera
 4. Click on options
 5. Go to the IPv4 settings tab
-6. Click on the "Method" dropdown and select "Shar to other computers"
+6. Click on the "Method" dropdown and select "Shared to other computers"
 7. Check the box next to "Require IPv4 addressing for this connection to complete
 8. Click save
 
-<h2>Headless</h2>
+<h2>Headless Mode only</h2>
 
 1. Install nmcli on the Nano by running the following command:  
         `sudo apt install network-manager`  
@@ -30,12 +30,14 @@
 <h2>Finding the Camera's IP Adress</h2>
 
 1. Install `tshark` on the Nano by running the following command:  
-  `sudo apt install tshark`  
-    1. `tshark` is an application that will allow us to look at the data packets being sent by the camera.   
+  `sudo apt install tshark`
+    1. If using a virtual environment, deactivate it first and then run the above command 
+    2. `tshark` is an application that will allow us to look at the data packets being sent by the camera.   
 2. Run `tshark` by simply running the following command:
   `tshark`
     1. If it returns a message saying permission was denied, run it using `sudo`:  
       `sudo tshark`
+    2. Again, run the above command on root system, not in virtual environment 
     2. It should say `Capturing on 'eth0'`   
 3. Look for a line that contains the word "Amcrest," similar to this:  
   `1 0.000000000 AmcrestT_2f:d6:78 → Broadcast    ARP 60 Gratuitous ARP for 10.42.0.54`  
