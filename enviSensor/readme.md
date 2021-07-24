@@ -63,6 +63,14 @@ Air Pressure:
 
 * A jupyter notebook containing code that calculates the normal state of the enviornment, then alerts you if there are abnormal changes in the enviornment
 
+
+<h2>burnInPlots.ipynb</h2>
+* A jupyter notebook containing plots of the datasets collected from various burn-in tests
+
+
+<h2>dataPlots.ipynb</h2>
+* A jupyter notebook containing plots of various datasets collected from the sensor
+
 <h2>collectData.py</h2>
 
 * A python script that takes readings of humidity, air pressure, temperature, and gas resistance every minute for given amount of minutes and saves it to a csv file
@@ -78,6 +86,9 @@ Air Pressure:
 <h2>hourData.csv</h2>
 
 * Pre-recorded data from the sensor. Measurments of each type were taken once every minute over the course of an hour. The data has not been cleaned up and my contain outlying values.
+
+<h2>burnInTests/</h2>
+* A directory containing data from various burn in tests
 
 <h2>images/</h2>
 
