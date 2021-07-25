@@ -1,6 +1,6 @@
 """
 This script takes readings of humidity, air pressure, temperature,
-and gas resistance every minute and saves it to a file.
+and gas resistance and saves it to a file.
 """
 
 # Required Libraries
@@ -24,20 +24,29 @@ sensor.set_gas_heater_temperature(320)
 sensor.set_gas_heater_duration(150)
 sensor.select_gas_heater_profile(0)
 
-# Number of minutes to collect data
-run_time = int(sys.argv[2])
+# Script Arguments
+burn_delay = int(sys.argv[1]) # Time between each burn-in reading - (seconds)
+burn_time  = int(sys.argv[2]) # Total burn-in time ---------------- (minutes)
+run_delay  = int(sys.argv[3]) # Time between each measurment ------ (seconds)
+run_time   = int(sys.argv[4]) # Total run time -------------------- (minutes)
+file_name  = str(sys.argv[5]) # File name to save data
 
-# Number of minutes data has been collected
+
+# Number of seconds data has been collected
 live_time = 0
 
 # A 2D array where the collected data will be stored
-data = [[0,0,0,0,0]]
+# First entry contains metadata
+data = [[burn_delay, burn_time, run_delay, run_time, 0]]
 
 # Sensor burn in
 print(Back.GREEN +
-      'Burnning in for ' + str(sys.argv[1]) + ' mins' +
+      'Burnning in for ' + str(burn_time) + ' mins' +
+      'at ' + str(burn_delay) + ' sec intervals' +
       Style.RESET_ALL)
-for x in range (0, int(sys.argv[1]) * 60):
+
+
+while live_time < burn_time * 60:
     if sensor.get_sensor_data():
         sensor.data.temperature
         sensor.data.pressure
@@ -46,13 +55,18 @@ for x in range (0, int(sys.argv[1]) * 60):
         if sensor.data.heat_stable:
             sensor.data.gas_resistance
 
-        time.sleep(1)
+        time.sleep(burn_delay)
+        live_time += burn_delay
+
+# Reset live_time to 0
+live_time = 0
         
 print(Back.GREEN +
       'Collecting data for ' + str(run_time) + ' mins' +
+      'at ' + run_delay + ' sec intervals' +
       Style.RESET_ALL)
      
-while live_time < run_time + 1: 
+while live_time < (run_time + 1) * 60: 
     if sensor.get_sensor_data():
         if sensor.data.heat_stable:
             # Takes a reading of everything and stores it in an array
@@ -69,7 +83,7 @@ while live_time < run_time + 1:
                         sensor.data.humidity,
                         -1]]
             print(Fore.YELLOW +
-                  'Warning: Gas resistance data could not be collected at minute ' +
+                  'Warning: Gas resistance data could not be collected at ' +
                   str(live_time) +
                   Style.RESET_ALL)
         
@@ -77,33 +91,31 @@ while live_time < run_time + 1:
         # the 2D array containing all the data
         data = np.append(data, reading, axis=0)
         
-        print('Data collected at minute ' + str(live_time) + ' of ' + str(run_time)) 
+        print('Data collected at ' + str(live_time) + ' seconds of ' +
+        str(run_time) + ' minutes') 
         
     else:
         # No data is available
         np.append(data, [[live_time,-1,-1,-1,-1]], axis=0)
         print(Fore.YELLOW +
-              'Warning: No data could be collected at minute ' +
+              'Warning: No data could be collected at ' +
               str(live_time) +
               Style.RESET_ALL)
     
     # Increments the number of minutes data has been collected
-    live_time += 1
+    live_time += run_delay
     
     if live_time < run_time + 1:
         # Waits 60 seconds before going back to the beginning of the loop
         # and taking the next measurement
-        time.sleep(60)
-
-# Removes the firt row of 0s in the data array
-data = np.delete(data, (0), axis=0)
+        time.sleep(run_delay)
     
 # Save all the data that was collected and stored in the data array to a file
-np.savetxt(str(sys.argv[3]), 
+np.savetxt(file_name, 
            data,
            delimiter=",",
            fmt='%1.3f')
 
 print(Back.GREEN +
-      'Saved data to ' + str(sys.argv[3]) +
+      'Saved data to ' + file_name +
       Style.RESET_ALL)
