@@ -27,6 +27,10 @@ This directory contains instructions on how to set up the camera with the Jetson
 * Code that captures frames from the camera using a thread
 * Used in the notebook "StreamWithThreading.ipynb"
 
+<h2>CameraWaggle.py</h2>
+
+* Python program that gets the camera stream using the Waggle platform and calculates the FPS
+
 <h2>sampleVideo.MP4</h2>
 
 * A short video (approximately 10 seconds long) for use in the videoStream notebook
