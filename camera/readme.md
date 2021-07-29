@@ -37,4 +37,4 @@ This directory contains instructions on how to set up the camera with the Jetson
 
 <h2>readme.md</h2>
 
-* A short video (approximately 10 seconds long) for use in the videoStream notebook
+* This file
