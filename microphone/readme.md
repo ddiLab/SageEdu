@@ -65,9 +65,9 @@ Read in WAV File:
 * Note: requires virtual environment setup
 * Instructions and code demonstrating how to read WAV files in a Python program 
 
-<h2>WaggleRecordingAudio.ipynb</h2>
+<h2>WaggleAudio.ipynb</h2>
 
-* Records audio from the usb microphone using the Waggle platform
+* Guidelines on using the usb microphone with the Waggle platform
 
 <h2>sample.wav</h2>
 
