@@ -69,6 +69,16 @@ Read in WAV File:
 
 * Guidelines on using the usb microphone with the Waggle platform
 
+<h2>CommandsVideoAudio.ipynb</h2>
+
+* A notebook that runs shell commands that can record a video with audio from the camera and grab just audio from the camera using ffmpeg
+
+<h2>CameraAudioWaggle.py</h2>
+
+* Python program that is able to save just video footage without any audio from the camera into the current directory using the Waggle platform
+* There are comments outlining possible methods of also including audio, but errors arise when using ffmpeg's libx264 with opencv
+    * The error might be fixable by changing some .config files of opencv
+
 <h2>sample.wav</h2>
 
 * A sample WAV file for use in the `readingWavFiles` notebook
