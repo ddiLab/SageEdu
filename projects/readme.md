@@ -15,6 +15,7 @@ Please make sure to have followed the set up instructions for every component
 <h2>ACDetectorCamera.ipynb</h2>
 
 * Notebook that checks if an AC is on in the room with the microhpone of the camera and environmental sensor
+* Inspired by the ACDetector.ipynb notebook
 
 <h2>readme.md</h2>
 
