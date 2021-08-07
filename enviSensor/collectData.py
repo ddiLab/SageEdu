@@ -8,7 +8,6 @@ import bme680
 import time
 import numpy as np
 import sys
-import colorama
 from colorama import Fore, Back, Style
 
 # Sensor Setup
@@ -23,6 +22,9 @@ sensor.set_gas_status(bme680.ENABLE_GAS_MEAS)
 sensor.set_gas_heater_temperature(320)
 sensor.set_gas_heater_duration(150)
 sensor.select_gas_heater_profile(0)
+
+def time_ns():
+    return int(time.time() * 1e9)
 
 def get_all_readings():
     if sensor.get_sensor_data():
@@ -84,36 +86,35 @@ while live_time < (run_time + 1) * 60:
     reading  = get_all_readings()
     if reading == 0:
         # No data is available
-        np.append(data, [[live_time,-1,-1,-1,-1]], axis=0)
+        np.append(data, [[time_ns(),-1,-1,-1,-1]], axis=0)
         print(Fore.YELLOW +
               'Warning: No data could be collected at ' +
-              str(live_time) + ' seconds' +
+              str(time_ns()) + ' seconds' +
               Style.RESET_ALL)
 
     else:
         if reading[3] == -1:
             print(Fore.YELLOW +
                     'Warning: Gas resistance data could not be collected at ' +
-                    str(live_time) + ' seconds' +
+                    str(time_ns()) + ' seconds' +
                     Style.RESET_ALL)
             
         # The array with the last set of readings is added to
         # the 2D array containing all the data
-        data = np.append(data, [[live_time,
+        data = np.append(data, [[time_ns(),
                                  reading[0],
                                  reading[1],
                                  reading[2], 
                                  reading[3]]], axis=0)
             
-        print('Data collected at ' + str(live_time) + ' seconds of ' +
-        str(run_time) + ' minutes') 
+        print('Data collected at ' + str(time_ns()) + ' seconds') 
         
     
     # Increments the number of minutes data has been collected
     live_time += run_delay
     
-    if live_time < run_time + 1:
-        # Waits 60 seconds before going back to the beginning of the loop
+    if live_time < (run_time + 1) * 60:
+        # Waits run_delay seconds before going back to the beginning of the loop
         # and taking the next measurement
         time.sleep(run_delay)
     
