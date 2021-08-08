@@ -1,4 +1,5 @@
 from waggle.data.audio import Microphone
+from scipy.io import wavfile
 import numpy as np
 import time
 import sys
@@ -10,8 +11,10 @@ def time_ns():
     return int(time.time() * 1e9)
 
 def getAudioSample(duration):
-    sample = microphone.record(duration)
-    return sample.data
+    sample = microphone.record(sample_time)
+    sample.save("audioSample.wav")
+    (samplerate, data) = wavfile.read('audioSample.wav')
+    return data
 
 # Script Arguments
 sample_delay = int(sys.argv[1]) # Time between each sample - (seconds)
@@ -35,10 +38,10 @@ print(Back.GREEN +
 while live_time < (run_time + 1) * 60:
     startTime = time_ns()
     sample = getAudioSample(sample_time)
-
+    print('sample: ', sample)
     avgAmp = np.average(np.absolute(sample))
-    maxAmp = np.amax(sample)
-    minAmp = np.amin(sample)
+    maxAmp = np.amax(np.absolute(sample))
+    minAmp = np.amin(np.absolute(sample))
 
     data = np.append(data, [[startTime,
                              avgAmp,
