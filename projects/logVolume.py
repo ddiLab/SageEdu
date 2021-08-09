@@ -38,7 +38,6 @@ print(Back.GREEN +
 while live_time < (run_time + 1) * 60:
     startTime = time_ns()
     sample = getAudioSample(sample_time)
-    print('sample: ', sample)
     avgAmp = np.average(np.absolute(sample))
     maxAmp = np.amax(np.absolute(sample))
     minAmp = np.amin(np.absolute(sample))
@@ -51,7 +50,7 @@ while live_time < (run_time + 1) * 60:
     print('Sample collected at ' + str(startTime) + ' seconds')
 
     # Increments the number of minutes data has been collected
-    live_time += sample_delay
+    live_time += sample_time + sample_delay
 
     if live_time < (run_time + 1) * 60:
         # Waits sample_delay seconds before going back to the beginning of the
