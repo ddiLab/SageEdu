@@ -52,6 +52,9 @@ Read in WAV File:
 
 * Contains instructions on how to setup the microphone with the Nano
 
+<h2>audioAnalysisLibraries.md</h2>
+* Includes instructions on setting up the Librosa and pyAudioAnalysis libraries for audio analysis
+
 <h2>readingWavFiles.ipynb</h2>
 
 * Instructions and code demonstrating how to read WAV files into a Python program
