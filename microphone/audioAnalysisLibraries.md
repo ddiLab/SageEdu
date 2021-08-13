@@ -1,4 +1,4 @@
-# Instructions on installing audio analysis packages
+# Instructions on installing audio analysis libraries
 Before you proceed, it's important to mention:
 1. Installation of pyAudioAnalysis could take upwards of two hours
 2. The librosa library will require packages not included in its installation (e.g., numpy, audioread, scikit-learn). So to ensure a smooth installation, install pyAudioAnalysis first. Or you can take a look at the [setup requirements](https://github.com/librosa/librosa/blob/90cef6fb5a38261eb2076d3e00aad4927400353f/setup.cfg) and install them individually
