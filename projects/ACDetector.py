@@ -2,7 +2,6 @@ from waggle.data.audio import Microphone
 import time
 
 from scipy.io import wavfile
-import scipy.io
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -29,6 +28,8 @@ sample = microphone.record(10)
 sample.save("ACDetector.wav")
 (samplerate, data) = wavfile.read('ACDetector.wav')
 noAC = np.average(np.absolute(data))
+print("No AC Amp:")
+print(noAC)
 
 print("Calibrating Envi Sensor...")
 temp = []
@@ -39,6 +40,8 @@ for i in range(1, 10):
     time.sleep(1)
 
 norm_temp = np.average(temp)
+print("Norm Temp:")
+print(norm_temp)
 
 
 print("Running...")
@@ -49,30 +52,33 @@ while True:
     (samplerate, data) = wavfile.read('ACDetector.wav')
 
     avgAmp = np.average( np.absolute(data))
+    print("Currnt avg Amp:")
+    print(avgAmp)
 
     # Check if AC is on based on sound
-    if (avgAmp - noAC > 5) and not micAC:
+    if (avgAmp - noAC > 100) and not micAC:
         print("AC is now on based on mic")
         micAC = True  
     elif micAC:
         print("AC is now off based on mic")
         micAC = False
 
+    # Collecting Enviornmental Data
+    enviData = []
     for i in range(1,10):
         if sensor.get_sensor_data():
-            reading = [sensor.data.temperature,
-                       sensor.data.pressure,
-                       sensor.data.humidity]
+            reading = sensor.data.temperature
 
             enviData = np.append(enviData, [reading], axis=0)
+        time.sleep(1)
 
     avgTemp = np.average(enviData)
+    print("Current avg temp:")
+    print(avgTemp)
     # Check if AC is on based on temperature
-    if (norm_temp - avgTemp > 5) and not enviAC:
+    if (norm_temp - avgTemp > 2) and not enviAC:
         print("AC is now on based on envi")
         enviAC = True  
     elif enviAC:
         print("AC is now off based on envi")
         enviAC = False
-
-    time.sleep(10)
