@@ -10,8 +10,15 @@ Before you proceed, it's important to mention:
 4. Clone the pyAudioAnalysis repo with `git clone https://github.com/tyiannak/pyAudioAnalysis.git`
 5. Reactivate the virtual environment (if using one)
 6. Enter the repo with `cd pyAudioAnalysis/`
-7. Run the command `pip install -r ./requirements.txt`
-    1. This will install the dependencies for the library, and it might take a while
+7. Install the following dependencies:
+    * numpy: `python3 -m pip install numpy`
+    * matplotlib: `python3 -m pip install matplotlib`
+    * scipy: `python3 -m pip install scipy`
+    * sklearn: `python3 -m pip install sklearn`
+    * hmmlearn: `python3 -m pip install hmmlearn`
+    * simplejson: `python3 -m pip install simplejson`
+    * eyed3: `python3 -m pip install eyed3`
+    * pydub: `python3 -m pip install pydub`
 8. Run the command `pip install -e .`
 9. Note: installing pyAudioAnalysis is now available in any virtual environment with the root changes implemented above
 10. Refer to the library's [GitHub Repo](https://github.com/tyiannak/pyAudioAnalysis) for more information
