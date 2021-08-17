@@ -11,7 +11,7 @@ Before you proceed, it's important to mention:
 5. Reactivate the virtual environment (if using one)
 6. Enter the repo with `cd pyAudioAnalysis/`
 7. Install the following dependencies:
-    * numpy: `python3 -m pip install numpy`
+    * numpy: `python3 -m pip install --update numpy==1.18.1`
     * matplotlib: `python3 -m pip install matplotlib`
     * scipy: `python3 -m pip install scipy`
     * sklearn: `python3 -m pip install sklearn`
