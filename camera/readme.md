@@ -6,34 +6,25 @@ This directory contains instructions on how to set up the camera with the Jetson
 
 * Contains instructions on how to setup the camera with the Nano
 
-<h2>videoStream.ipynb</h2>
+<h2>Stream.ipynb</h2>
 
-* A Jupyter notebook containing instructions and code on streaming video from the camera into a Python program
+* A Jupyter notebook containing instructions and code on streaming video from the camera
 
-<h2>Ip Webcam.ipynb</h2>
+<h2>WaggleStream.ipynb</h2>
 
-* A Jupyter notebook containing code on streaming video from the camera in a Python program
+* A Jupyter notebook containing code on streaming video from the camera using the Waggle platform
 
-<h2>IP Web Cam.py</h2>
+<h2>initial_test_programs/</h2>
 
-* Code from the "Ip Webcam.ipynb" notebook on streaming video from the camera in python
+* A directory containing previous notebooks and python scripts used for testing the camera
+
+<h2>videos/</h2>
+
+* A directory containing videos for testing
 
 <h2>StreamWithThreading.ipynb</h2>
 
 * Contains code in streaming video from the camera using threads to boost the frame rate
-
-<h2>ThreadedStream.py</h2>
-
-* Code that captures frames from the camera using a thread
-* Used in the notebook "StreamWithThreading.ipynb"
-
-<h2>CameraWaggle.py</h2>
-
-* Python program that gets the camera stream using the Waggle platform and calculates the FPS
-
-<h2>sampleVideo.MP4</h2>
-
-* A short video (approximately 10 seconds long) for use in the videoStream notebook
 
 <h2>readme.md</h2>
 
