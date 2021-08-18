@@ -22,10 +22,6 @@ This directory contains instructions on how to set up the camera with the Jetson
 
 * A directory containing videos for testing
 
-<h2>StreamWithThreading.ipynb</h2>
-
-* Contains code in streaming video from the camera using threads to boost the frame rate
-
 <h2>readme.md</h2>
 
 * This file
