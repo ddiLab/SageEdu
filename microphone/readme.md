@@ -1,94 +1,31 @@
 <h1>Microphone</h1>
 
-This directory contains instructions on how to set up the microphone with the Jetson Nano along with some example code.
+This directory contains instructions on how to set up the microphone with the Jetson Nano along with some example code/notebooks.
 
----
+<h2>ReadRecordAudio.ipynb</h2>
 
-<h2>Reference</h2>
-
-<h3>Recording Audio:</h3>
-
-Required Libraries:
-```
-import sounddevice as sd
-from scipy.io.wavfile import write
-```
-
-Set Sample Frequency and Duration:
-```
-freq = 44100
-duration = 5
-```
-
-Record:
-```
-recording = sd.rec(int(duration * freq), samplerate=freq, channels=2)
-sd.wait()
-```
-
-Convert to WAV File:
-```
-write("recording.wav", freq, recording)
-```
-
-<h3>Reading WAV Files</h3>
-
-Required Libraries:
-```
-from scipy.io import wavfile
-import scipy.io
-```
-
-Read in WAV File:
-```
-(samplerate, data) = wavfile.read('recording.wav')
-```
-
----
-
-<h2>Directory Contents:</h2>
-
-<h2>setup.md</h2>
-
-* Contains instructions on how to setup the microphone with the Nano
-
-<h2>audioAnalysisLibraries.md</h2>
-* Includes instructions on setting up the Librosa and pyAudioAnalysis libraries for audio analysis
-
-<h2>readingWavFiles.ipynb</h2>
-
-* Instructions and code demonstrating how to read WAV files into a Python program
-
-<h2>recordingWavFiles.ipynb</h2>
-
-* Instructions and code demonstrating how to record WAV files in a Python program using the microphone
-
-<h2>readAudio2.ipynb</h2>
-
-* Note: requires virtual environment setup
-* Instructions and code demonstrating how to read WAV files in a Python program 
+* Instructions and code demonstrating how to read and record WAV files
 
 <h2>WaggleAudio.ipynb</h2>
 
-* Guidelines on using the usb microphone with the Waggle platform
+* Instructions on how to read and record audio using pywaggle
 
 <h2>CommandsVideoAudio.ipynb</h2>
 
-* A notebook that runs shell commands that can record a video with audio from the camera and grab just audio from the camera using ffmpeg
+* A notebook that runs shell commands that can record an MP4 video from the camera and grab just audio from the camera using ffmpeg
 
-<h2>CameraAudioWaggle.py</h2>
+<h2>pyAudioAnalysisIntroduction.ipynb</h2>
 
-* Python program that is able to save just video footage without any audio from the camera into the current directory using the Waggle platform
-* There are comments outlining possible methods of also including audio, but errors arise when using ffmpeg's libx264 with opencv
-    * The error might be fixable by changing some .config files of opencv
+* A notebook that contains instructions and code in using the `pyAudioAnalysis` library
+* Includes feature extraction, beat detection, and visualization with spectrograms and chromagrams
 
-<h2>sample.wav</h2>
+<h2>audio_files/</h2>
 
-* A sample WAV file for use in the `readingWavFiles` notebook
+* Directory contains audio files used in the notebooks within this directory
 
-<h2>waves.wav</h2>
+<h2>initial_test_programs/</h2>
 
-* A sample WAV file for use in the `readAudio2` notebook
+* Directory contains old programs used to test the microphone
 
 <h2>readme.md</h2>
 

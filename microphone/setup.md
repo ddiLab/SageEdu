@@ -16,16 +16,9 @@
 
 6. If the microhpone is working then when the led is green, the microhpone is picking up noise. When it's red, the microhpone is not picking up noise
 
-<h2>Software for recording and playing sound</h2>
-
-1. On the Nano, install the `sounddevice` module by running the following command:   
-  `python3 -m pip install sounddevice`
-  
-2. Install the `scipy` library by running the following command:  
-  `python3 -m pip install scipy`
   
   <h3>The microphone is all set up now and ready for you to use!</h3>
   
-  See `microphone/recordingWavFiles.ipynb` for more information on the microphone including how to interact with it using Python.
+  See the jupyter notebooks for more information on the microphone including how to interact with it using Python.
   
   
