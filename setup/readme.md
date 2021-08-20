@@ -11,6 +11,11 @@ Headless mode only requires the use of another computer. Setting up the Nano hea
 
 <h2>Directory Contents:</h2>
 
+<h2>general/</h2>
+
+* A directory containing files on general set up instructions regardless of headful or headless setup
+* Please read over these files after doing an initial headful or headless set up
+
 <h2>headful/</h2>
 
 * A directory containing instructions on how to set up the Jetson Nano in headful mode
@@ -18,6 +23,10 @@ Headless mode only requires the use of another computer. Setting up the Nano hea
 <h2>headless/</h2>
 
 * A directory containing instructions on how to set up the Jetson Nano in headless mode
+
+<h2>ordersheet.xlsx</h2>
+
+* A file containing the hardware and costs of this kit
 
 <h2>readme.md</h2>
 
