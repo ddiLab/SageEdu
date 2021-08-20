@@ -14,6 +14,12 @@ Please go through these files for a stable working environment on the nano
 * Text file that contains the necessary python packages for this repository
 * Before proceeding, refer to `PackageInstallationGuide.md` first
 
+<h2>stable_requirements.txt</h2> 
+
+* Text file that contains a list of python pacakges and their versions for installation
+* These specific pacakges have been extensively tested in the creation of this repository and should serve as a fail-safe for dependency issues
+* Before proceeding, refer to `PackageInstallationGuide.md` first
+
 <h2>AudioLibrariesSetup.md</h2> 
 
 * Contains instructions on how to install the pyAudioAnalysis and Librosa python audio analysis libraries
