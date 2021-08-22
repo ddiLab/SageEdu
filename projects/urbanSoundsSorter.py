@@ -1,5 +1,6 @@
 import os
 import re
+from scipy.io import wavfile
 
 classes = ['air_conditioner', 'car_horn', 'children_playing', 
            'dog_bark', 'drilling', 'engine_idling', 'gun_shot',
@@ -26,6 +27,10 @@ for c in range(0,10):
 
         #Iterates through all the files in the folder
         for file in fileList:
-            if re.search(pattern, file):
-                # move file from to folder
-                os.rename(sourceFolder + file, destFolder + file)
+            try:
+                sampling_rate, signal = wavfile.read(sourceFolder + file)
+                if re.search(pattern, file) and sampling_rate != 24:
+                    # move file from to folder
+                    os.rename(sourceFolder + file, destFolder + file)
+            except:
+                pass
