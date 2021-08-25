@@ -24,4 +24,4 @@
 	4. Restart the system
 14. You now have a working Linux environment!
 
-**Next, follow the instructions in the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further set up the nano.**
+**Next, follow the instructions in the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further customize the nano.**
