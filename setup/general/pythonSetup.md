@@ -18,7 +18,7 @@ These instructions will walk you through installing python and creating a virtua
     `$ source my_project_env/bin/activate`
 	1. Your command prompt should read something similar to:  
 	    `(my_project_env)user@host:~/Workspace$`
-	2. **Note:** Always activate your virtual environment whenever you start working with the packages you install within it and for Sage related tasks. And deactivate it with `(my_project_env)user@host:~$ deactivate` when you are done working.
+	2. **Note:** Always activate your virtual environment whenever you start working with the packages you install within it and for work related tasks. And deactivate it with `(my_project_env)user@host:~$ deactivate` when you are done working.
 	3. With this virtual environment, site packages and dependencies can be organized separate from the rest of the machine, so always be conscious of where you are working
 8. Run the command:  
     `(my_project_env)user@host:~$ python3 -m pip install --upgrade pip`
