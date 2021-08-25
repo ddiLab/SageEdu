@@ -17,12 +17,6 @@ Setting up the Nano headful allows it to be used via a GUI.
 
 * Contains instructions on how to perform the basic initial setup of the Nano
 
-<h2>virtualEnvironmentSetup.md</h2> 
-
-* Note: optional method for setting up python work space 
-* Contains the necessary steps to create a virtual environment and instructions on how to install packages
-* To reiterate, everything can be done with a virtual environment as working without one, but always make sure to install packages with `pip install ...`and not `sudo ...` within the virtual environment. 
-
 <h2>images/</h2> 
 
 * A directory containing images referenced in the instructions
