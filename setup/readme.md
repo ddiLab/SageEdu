@@ -11,6 +11,8 @@ Setting up the Nano headful allows it to be used by interacting with a GUI.
 ### [Headless Mode](https://github.com/ddiLab/SageEdu/tree/main/setup/headless)
 Only requires the use of another computer. Setting up the Nano headless will require that the Nano be used solely through a command line interface.
 
+After completing the steps in either director above, head to the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further customize the nano.
+
 ---
 
 <h2>Directory Contents:</h2>
