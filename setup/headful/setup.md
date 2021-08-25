@@ -24,4 +24,4 @@
 	4. Restart the system
 14. You now have a working Linux environment!
 
-**Next, read the [Python setup instructions](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md) to be able to use python on your Nano.**
+**Next, follow the instructions in the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further set up the nano.**
