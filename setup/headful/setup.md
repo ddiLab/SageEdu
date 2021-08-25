@@ -1,4 +1,4 @@
- 1. Follow this link: [Getting Started with Jetson Nano](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro)
+ 1. Follow this link to Nvida's website: [Getting Started with Jetson Nano](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#intro)
  2. Read the introduction and familiarize yourself where the different components are located on the nano
  3. Write the image to your microSD card by following the instructions under "Write Image to the microSD Card"
  4. Proceed with the rest of the instructions for whichever type of device you are using
@@ -9,13 +9,13 @@
  8. Add a jumper to those pins, so it allows power through the DC cable <img alt='Jumper'  src='./images/DCJumper.jpg'></img>
  9. Connect the USB Wi-Fi adapter <img alt='WIFI'  src='./images/WIFI.jpg'></img>
  10. Once the jumper is in the correct position, plug in the 1 = DC cable, 2 = monitor, 3 = mouse and keyboard <img alt='hardware'  src='./images/externalParts.jpg'></img>
- 11. Follow the "First Boot" and "After logging in" instructions under the "Setup and First Boot" module in the link from step 1
+ 11. Follow the [Initial Setup with Display Attached](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup-display) instructions under the [Setup and First Boot](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup) module from Nvida's website
 	 1. Review and accept NVIDIA Jetson software EULA
 	 2. Select system language and keyboard layout
 	 3. Connect to the desired Wi-Fi connection and select your time zone
 	 4. Create username, password, and computer name
-	 5. Select recommended APP partition size
-	 6. Select default Nvpmodel Mode 
+	 5. Select APP partition size, leave this to the default value
+	 6. Select Nvpmodel Mode, keep the default setting here as well
 12. At initial login screen, restart the system to allow additional installation (select "Shut Down..." from the gearbox on the upper right of the screen)
 13. Update the software
 	1. Open the search menu (top left of the screen), type "Software Updater," and select it
