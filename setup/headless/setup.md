@@ -85,4 +85,4 @@ Now let's setup the network.
   
 And that's it, your Nano is all set up!
 
-**Next, follow the instructions in the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further set up the nano.**
+**Next, follow the instructions in the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further customize the nano.**
