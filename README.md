@@ -3,6 +3,8 @@
 ## Welcome the to the SAGE edu GitHub!
 This repository contains information on setting up and using a Jetson Nano with different sensors such as a camera, a microphone, and an environmental sensor. 
 
+**To get started with your Jetson Nano, go to the <a href='https://github.com/ddiLab/SageEdu/tree/main/setup'>setup directory</a>.**
+
 <h2>Directory Contents:</h2>
 
 <h2>camera/</h2>
