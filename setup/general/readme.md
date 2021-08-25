@@ -1,6 +1,14 @@
 <h1>General Setup</h1>
 This directory includes various files with instructions on further setting up the nano, regardless of initial headful or headless setup.  
-Please go through these files for a stable working environment on the nano
+Please go through these files for a stable working environment on the nano.  
+
+Follow them in this order:
+
+1. [pythonSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md)
+2. [githubSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/githubSetup.md)
+3. [PackageInstallationGuide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md)  
+  
+After completing the above steps, you are all done with the setup directory! Head back to the [main page](https://github.com/ddiLab/SageEdu).
 
 ---
 
@@ -34,6 +42,11 @@ Please go through these files for a stable working environment on the nano
 
 * Contains instructions on how to properly install linux and python packages
 * **A must read**
+
+<h2>pythonSetup.md</h2> 
+
+* Contains the necessary steps to install python and create a virtual environment
+* To reiterate, everything can be done with a virtual environment as working without one, but always make sure to install packages with `pip install ...`and not `sudo ...` within the virtual environment. 
 
 <h2>githubSetup.md</h2> 
 
