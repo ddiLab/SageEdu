@@ -2,10 +2,14 @@
 
 This directory contains instructions on how to perform the initial set up of the Jetson Nano.
 
-The setup can be performed in either headful or headless modes. Headful mode requires the use of a monitor, keyboard, mouse, and another computer. 
+The setup can be performed in either headful or headless modes. The mode you decide to use for the setup is not binding. Once the Nano is setup you can switch between headfull and headless modes as you wish.
+
+### Headful mode 
+Requires the use of a monitor, keyboard, mouse, and another computer. 
 Setting up the Nano headful allows it to be used by interacting with a GUI.
 
-Headless mode only requires the use of another computer. Setting up the Nano headless will require that the Nano be used solely through a command line interface.
+### Headless mode
+Only requires the use of another computer. Setting up the Nano headless will require that the Nano be used solely through a command line interface.
 
 ---
 
