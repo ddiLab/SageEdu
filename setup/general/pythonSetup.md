@@ -12,7 +12,7 @@ These instructions will walk you through installing python and creating a virtua
 4. Install the ability to construct a virtual environment by running:  
     `$ sudo -H pip3 install virtualenv`
 5. Create a directory on your computer related to all project tasks (e.g., `/Workspace`). This directory will store your virtual environment and Github repo (if you are using one)
-6. Use the command `$ virtualenv /my_project_env` within `/Workspace`, where `/my_project_env` is the name of the virtual environment you want to create, so make sure to name it appropriately 
+6. Use the command `$ virtualenv ./my_project_env` within `/Workspace`, where `./my_project_env` is the name of the virtual environment you want to create, so make sure to name it appropriately 
 	1. **Important:** Do not ever edit this folder
 7. Activate the environment with the command:  
     `$ source my_project_env/bin/activate`
