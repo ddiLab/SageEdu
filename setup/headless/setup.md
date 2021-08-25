@@ -66,30 +66,23 @@ Now let's setup the network.
 17) Update the nano by running the following commands:  
   `sudo apt update`  
   `sudo apt upgrade`
-
-18) Install pip3 by running the following command:  
-  `sudo apt install python3-pip`
   
-19) Update pip by running the following command:  
-  `python3 -m pip install --upgrade pip`
-  
-20) Shutdown the Nano by running the following command:  
+18) Shutdown the Nano by running the following command:  
   `sudo shutdown now`
     1) We do this so that all the updates we just performed will take effect
     2) Wait for the Nano's green light to turn off
     
-21) Unplug the power supply from the Nano
+19) Unplug the power supply from the Nano
 
-22) Unplug the microUSB cord from the Nano
+20) Unplug the microUSB cord from the Nano
 
-23) Plug the power supply back into the Nano
+21) Plug the power supply back into the Nano
 
-24) In a terminal on your computer connect to the Nano via ssh by running the following command:  
+22) In a terminal on your computer connect to the Nano via ssh by running the following command:  
   `ssh [USERNAME]@[NANO NAME].local`
     1) Where `[USERNAME]` is replaced by your username on the Nano, and `[NANO NAME]` is replaced by the name you gave the Nano in step 12
     2) This is how you will be connecting to the Nano from now on!
-    
-25) Install jupyterlab by running the following command:  
-  `python3 -m pip install jupyterlab`
   
 And that's it, your Nano is all set up!
+
+**Next, read the [Python setup instructions](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md) to be able to use python on your Nano.**
