@@ -23,3 +23,5 @@
 	3. Download and install the updates
 	4. Restart the system
 14. You now have a working Linux environment!
+
+**Next, read the [Python setup instructions](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md) to be able to use python on your Nano.**
