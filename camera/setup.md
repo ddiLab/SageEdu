@@ -44,6 +44,16 @@
     1. The important part of this is the very last number, after the words "ARP for".  
     This is the IP adress of the camera. Make note of this, as you will need this to stream video from it.
     
-<h2>Now the camera is all set up!</h2>
+<h2>Python Enviornment</h2>
 
-See `Stream.ipynb` and `WaggleStream.ipynb` to learn how to stream video from the camera using Python.
+1. To create a virtual enviornment with all the packages you need to work through the tutorials simply run the folloing command from within the `camera/` directory:  
+    `bash camEnviSetup.sh`  
+    * If you want to set everything up on your own, open up the `camera/camEnviSetup.sh` file and take a look at what its doing. If something in that file seems confusing, take a look at either the [Python Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md) or the [Package Installation Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md).
+
+2. Then activate the virtual enviornment by running:  
+    `source camEnvi/bin/activate`
+
+3. Start a jupyter notebook server by running:  
+    `jupyter notebook`
+
+4. See `camera/Stream.ipynb` and `camera/WaggleStream.ipynb` to learn how to stream video from the camera using Python.
