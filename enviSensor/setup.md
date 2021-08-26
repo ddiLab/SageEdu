@@ -9,21 +9,15 @@ The black wire should connect to the ground pin and the red wire should connect 
 
 3. Turn on the Nano
 
-4. Install the packages required for the environmental sensor by runing the following command:  
-  `python3 -m pip install bme680`
+## Python Enviornment
+1. To create a virtual enviornment with all the packages you need to work through the tutorials simply run the folloing command from within the `enviSensor/` directory:  
+    `bash enviSensorEnviSetup.sh`
+    * If you want to set everything up on your own, open up the `enviSensor/enviSensorEnviSetup.sh` file and take a look at what its doing. If something in that file seems confusing, take a look at either the [Python Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md) or the [Package Installation Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md).
 
-5. Clone the BME680 GitHub repository by running the following command:  
-  `git clone https://github.com/pimoroni/bme680`
-    1. This will give us access to some sample code that we will use to 'burn in' the sensor
-    
-6. Navigate to the `/bme680-python/examples/` directory
+2. Activate the virtual enviornment by running:  
+    `source enviEnvi/bin/activate`
 
-7. Run the `read-all.py` script by runing the following command:  
-  `python3 read-all.py`
-    1. Leave this running for about 20 min the first time you set up the sensor
-    2. Wait until the gas resistance value stabilizes. This is the last value shown in each line in units of Ohms.
-    3. You can press `control` + `c` to stop the example
-    
-<h3>The enviornmental sensor is all set up now and ready for you to use!</h3>
+3. Start a jupyter notebook server by running:  
+    `jupyter notebook`
 
-See `enviSensor/enviSensorDemo.ipynb` for more information on the sensor including how to interact with it using Python.
+4. See `enviSensor/enviSensorDemo.ipynb` for more information on the sensor including how to interact with it using Python.
