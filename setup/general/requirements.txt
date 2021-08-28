@@ -5,3 +5,4 @@ matplotlib
 bme680
 scipy
 sounddevice
+colorama
