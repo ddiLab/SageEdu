@@ -7,17 +7,6 @@
 The black wire should connect to the ground pin and the red wire should connect to the pin labeled 3v3
   <img alt='Pins on Board Image' src='./images/envi-board.jpeg'></img>
 
-3. Turn on the Nano
+## Now the enviornmental sensor is all setup!
 
-## Python Enviornment
-1. To create a virtual enviornment with all the packages you need to work through the tutorials simply run the folloing command from within the `enviSensor/` directory:  
-    `bash enviSensorEnviSetup.sh`
-    * If you want to set everything up on your own, open up the `enviSensor/enviSensorEnviSetup.sh` file and take a look at what its doing. If something in that file seems confusing, take a look at either the [Python Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md) or the [Package Installation Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md).
-
-2. Activate the virtual enviornment by running:  
-    `source enviEnvi/bin/activate`
-
-3. Start a jupyter notebook server by running:  
-    `jupyter notebook`
-
-4. See `enviSensor/enviSensorDemo.ipynb` for more information on the sensor including how to interact with it using Python.
+See `enviSensor/enviSensorDemo.ipynb` for more information on the sensor including how to interact with it using Python.
