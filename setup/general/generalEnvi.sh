@@ -1,6 +1,8 @@
+# ! Run this from within the SageEdu/setup/general directory !
+
 # Virtual enviornment setup
-virtualenv ./general
-source general/bin/activate
+virtualenv ../../generalEnvi
+source ../../generalEnvi/bin/activate
 
 # Updating pip
 python3 -m pip install --upgrade pip
