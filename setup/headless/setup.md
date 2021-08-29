@@ -85,4 +85,4 @@ Now let's setup the network.
   
 And that's it, your Nano is all set up!
 
-**Next, follow the instructions in the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further customize the nano.**
+**Next, follow the instructions in the [Screen Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/headless/screen.md) to learn how to use screen, a very useful terminal application for using the Nano headless**
