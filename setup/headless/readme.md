@@ -1,16 +1,16 @@
-<h1> Headless Mode Setup</h1>
+# Headless Mode Setup
 
 This directory contains instructions on how to set up your Jetson Nano in headless mode.  
 Headless mode does not require a monitor, mouse, or keyboard to be connected to the nano. All you need is another computer!
 
-<h2>Useful Stuff</h2>
+---
 
-<h3>Connecting to Nano</h3> 
+## Useful Stuff
 
+### Connecting to Nano
  * `ssh [USERNAME]@[NANO NAME].local`
 
-<h3>Screen Commands</h3>
-
+### Screen Commands
  * New session:
    * `screen -S [NAME]`  
  * List Sessions:
@@ -22,31 +22,27 @@ Headless mode does not require a monitor, mouse, or keyboard to be connected to 
  * Exit and Quit:
    * `exit`
 
-<h3>Jupyter Notebook</h3>
-
+### Jupyter Notebook
  * Start Without Browser:  
    * `jupyter notebook --no-browser --port 8080`
  * Setup SSH Tunnel:  
    * `ssh -NL 8080:localhost:8080 [USERNAME]@[NANO NAME].local`
 
-<h2>Directory Contents</h2>
+---
 
-<h2>setup.md</h2>
+## Directory Contents
 
+### [setup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/headless/setup.md)
   * This contains instructions on how to perform the basic initial setup of the Nano
 
-<h2>jupyter.md</h2>
-
+### [jupyter.md](https://github.com/ddiLab/SageEdu/blob/main/setup/headless/jupyter.md)
   * This contains instructions on how to install and run jupyter notebooks on the Nano
 
-<h2>screen.md</h2>
-
+### [screen.md]()
   * This contains instructions on how to install and use the Screen application on the Nano
 
-<h2>/images</h2>
-  
+### [images/](https://github.com/ddiLab/SageEdu/tree/main/setup/headless/images)
   * A directory containing images referenced in the instructions
 
-<h2>readme.md</h2>
-
+### [readme.md](https://github.com/ddiLab/SageEdu/blob/main/setup/headless/images/readme.md)
   * This file
