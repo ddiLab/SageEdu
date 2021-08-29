@@ -7,32 +7,27 @@ This repository contains information on setting up and using a Jetson Nano with 
 
 Afterwards, take a look at the [camera](https://github.com/ddiLab/SageEdu/tree/main/camera), [enviSensor](https://github.com/ddiLab/SageEdu/tree/main/enviSensor), [microphone](https://github.com/ddiLab/SageEdu/tree/main/microphone), and [projects](https://github.com/ddiLab/SageEdu/tree/main/projects) directories.
 
-<h2>Directory Contents:</h2>
+---
 
-<h2>camera/</h2>
+## Directory Contents
 
+### [camera/](https://github.com/ddiLab/SageEdu/tree/main/camera)
 * Directory containing instructions on how to set up and use the camera with the Jetson Nano along with some example code
 
-<h2>enviSensor/</h2>
-
+### [enviSensor/](https://github.com/ddiLab/SageEdu/tree/main/enviSensor)
 * Directory containing instructions on how to set up and use the BME680 enviornmental sensor the your Jetson Nano along with some example code
 
-<h2>microphone/</h2>
-
+### [microphone/](https://github.com/ddiLab/SageEdu/tree/main/microphone)
 * Directory containing instructions on how to set up and use the microphone with the Jetson Nano along with some example code
 
-<h2>projects/</h2>
-
+### [projects/](https://github.com/ddiLab/SageEdu/tree/main/projects)
 * Directory containing various example projects on how to use the microphone, camera, and environmental sensor together to accomplish tasks
 
-<h2>setup/</h2>
-
+### [setup/](https://github.com/ddiLab/SageEdu/tree/main/setup)
 * Directory containing instructions on how to set up the Jetson Nano in both headfull and headless mode
 
-<h2>.gitignore</h2>
-
+### [.gitignore](https://github.com/ddiLab/SageEdu/blob/main/.gitignore)
 * A file that specifies intentionally untracked files to ignore
 
-<h2>README.md</h2>
-
+### [README.md](https://github.com/ddiLab/SageEdu/blob/main/README.md)
 * This file
