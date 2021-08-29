@@ -1,4 +1,4 @@
-<h1>Enviornmental Sensor</h1>
+# Enviornmental Sensor
 
 This directory contains instructions on how to set up the BME680 enviornmental sensor with your Jetson Nano, along with some example code.  
 See the <a href='https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-bme680-breakout'>official BME680 breakout documentation</a> 
@@ -6,9 +6,9 @@ for even more information on the sensor.
 
 ---
 
-<h2>Reference:</h2>
+## Reference
 
-<h3>Sensor Setup:</h3>
+### Sensor Setup
 
 ```
 sensor = bme680.BME680()
@@ -24,7 +24,7 @@ sensor.set_gas_heater_duration(150)
 sensor.select_gas_heater_profile(0)
 ```
 
-<h3>Checking if Sensor is Ready:</h3>
+### Checking if Sensor is Ready
 
 General Sensor Check:
 `sensor.get_sensor_data()`
@@ -40,39 +40,32 @@ Temperature:
 Air Pressure:
  `sensor.data.pressure`
  
- Humidity:
+Humidity:
  `sensor.data.humidity`
  
- Gas Resistance:
+Gas Resistance:
  `sensor.data.gas_resistance`
  
  ---
 
+## Directory Contents
 
-<h2>Directory Contents:</h2>
-
-<h2>setup.md</h2>
-
+### [setup.md](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/setup.md)
 * This contains instructions on how to setup the enviornmental sensor with the Nano
 
-<h2>enviSensorDemo.ipynb</h2>
-
+### [enviSensorDemo.ipynb](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/enviSensorDemo.ipynb)
 * A jupyter notebook demonstrating and explaining how to take readings from the sensor
 
-<h2>changeAlert.ipynb</h2>
-
+### [changeAlert.ipynb](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/changeAlert.ipynb)
 * A jupyter notebook containing code that calculates the normal state of the enviornment, then alerts you if there are abnormal changes in the enviornment
 
-
-<h2>burnInPlots.ipynb</h2>
+### [burnInPlots.ipynb](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/burnInPlots.ipynb)
 * A jupyter notebook containing plots of the datasets collected from various burn-in tests
 
-
-<h2>dataPlots.ipynb</h2>
+### [dataPlots.ipynb](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/Data%20Plots.ipynb)
 * A jupyter notebook containing plots of various datasets collected from the sensor
 
-<h2>collectData.py</h2>
-
+### [collectData.py](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/collectData.py)
 * A python script that takes readings of humidity, air pressure, temperature, and gas resistance every minute for given amount of minutes and saves it to a csv file
 * Run the scrip by running the following command:  
   `python3 collectData.py BURN_IN_DELAY BURN_IN_TIME RUN_DELAY RUN_TIME FILE_NAME`    
@@ -84,17 +77,14 @@ Air Pressure:
 * For example, run the following command to burn in for 20 minutes then collect data for an hour and save it to a file called `hour_data.csv`:  
     `python3 collectData.py 2 20 60 60 'hour_data.csv'`
 
-<h2>hourData.csv</h2>
-
+### [hourData.csv](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/hourData.csv)
 * Pre-recorded data from the sensor. Measurments of each type were taken once every minute over the course of an hour. The data has not been cleaned up and my contain outlying values.
 
-<h2>burnInTests/</h2>
+### [burnInTests/](https://github.com/ddiLab/SageEdu/tree/main/enviSensor/burnInTests)
 * A directory containing data from various burn in tests
 
-<h2>images/</h2>
-
+### [images/](https://github.com/ddiLab/SageEdu/tree/main/enviSensor/images)
 * A directory containing images used throught the documetation of the enviornmental sensor
 
-<h2>readme.md</h2>
-
+### [readme.md](https://github.com/ddiLab/SageEdu/blob/main/enviSensor/readme.md)
 * This file
