@@ -1,4 +1,4 @@
-<h1>Jetson Nano Setup</h1>
+# Jetson Nano Setup
 
 This directory contains instructions on how to perform the initial set up of the Jetson Nano.
 
@@ -15,25 +15,20 @@ After completing the steps in either director above, head to the [general](https
 
 ---
 
-<h2>Directory Contents:</h2>
+## Directory Contents
 
-<h2>general/</h2>
-
+### [general/](https://github.com/ddiLab/SageEdu/tree/main/setup/general)
 * A directory containing files on general set up instructions regardless of headful or headless setup
-* Please read over these files after doing an initial headful or headless set up
+* Read over these files after doing an initial headful or headless set up
 
-<h2>headful/</h2>
-
+### [headful/](https://github.com/ddiLab/SageEdu/tree/main/setup/headful)
 * A directory containing instructions on how to set up the Jetson Nano in headful mode
 
-<h2>headless/</h2>
-
+### [headless/](https://github.com/ddiLab/SageEdu/tree/main/setup/headless)
 * A directory containing instructions on how to set up the Jetson Nano in headless mode
 
-<h2>ordersheet.xlsx</h2>
-
+### [ordersheet.xlsx](https://github.com/ddiLab/SageEdu/blob/main/setup/ordersheet.xlsx)
 * A file containing the hardware and costs of this kit
 
-<h2>readme.md</h2>
-
+### [readme.md](https://github.com/ddiLab/SageEdu/blob/main/setup/readme.md)
 * This file
