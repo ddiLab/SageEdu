@@ -50,3 +50,5 @@ Before you continue you must first be in your Nano's terminal which can be done 
 
 8. Exit and quit the current session that is attached simply by running the following command:  
   `exit`
+  
+**Next, follow the instructions in the [general directory](https://github.com/ddiLab/SageEdu/tree/main/setup/general) to further customize the nano.**
