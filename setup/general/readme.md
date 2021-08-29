@@ -1,4 +1,4 @@
-<h1>General Setup</h1>
+# General Setup
 This directory includes various files with instructions on further setting up the nano, regardless of initial headful or headless setup.  
 Please go through these files for a stable working environment on the nano.  
 
@@ -12,44 +12,41 @@ After completing the above steps, you are all done with the setup directory! Hea
 
 ---
 
-<h2>linux_packages.sh</h2> 
+## Directory Contents
 
+### [linux_packages.sh](https://github.com/ddiLab/SageEdu/blob/main/setup/general/linux_packages.sh)
 * Shell program that installs linux packages
 * Before proceeding, refer to `PackageInstallationGuide.md` first
 
-<h2>requirements.txt</h2> 
-
+### [requirements.txt](https://github.com/ddiLab/SageEdu/blob/main/setup/general/requirements.txt)
 * Text file that contains the necessary python packages for this repository
 * Before proceeding, refer to `PackageInstallationGuide.md` first
 
-<h2>stable_requirements.txt</h2> 
-
+### [stable_requirements.txt](https://github.com/ddiLab/SageEdu/blob/main/setup/general/stable_requirements.txt)
 * Text file that contains a list of python pacakges and their versions for installation
 * These specific pacakges have been extensively tested in the creation of this repository and should serve as a fail-safe for dependency issues
 * Before proceeding, refer to `PackageInstallationGuide.md` first
 
-<h2>AudioLibrariesSetup.md</h2> 
-
+### [AudioLibrariesSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/AudioLibrariesSetup.md)
 * Contains instructions on how to install the pyAudioAnalysis and Librosa python audio analysis libraries
 * Before proceeding, refer to `PackageInstallationGuide.md` first
 
-<h2>JupyterNotebookSetup.md</h2> 
-
+### [JupyterNotebookSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupterNotebookSetup.md)
 * Contains instructions on how to set up Jupyter Notebook
 * Before proceeding, refer to `PackageInstallationGuide.md` first
 
-<h2>PackageInstallationGuide.md</h2> 
+### [jupyterNotebookTutorial.ipynb](https://github.com/ddiLab/SageEdu/blob/main/setup/general/jupyterNotebookTutorial.ipynb)
+* A Jupyter Notebook with instructions on how to use Jupyter Notebooks
 
+### [PackageInstallationGuide.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md)
 * Contains instructions on how to properly install linux and python packages
 * **A must read**
 
-<h2>pythonSetup.md</h2> 
-
+### [pythonSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md)
 * Contains the necessary steps to install python and create a virtual environment
 * To reiterate, everything can be done with a virtual environment as working without one, but always make sure to install packages with `pip install ...`and not `sudo ...` within the virtual environment. 
 
-<h2>githubSetup.md</h2> 
-
+### [githubSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/githubSetup.md)
 * Includes instructions on how to create a local repository from Github
 * Some useful git commands to use:
     * `$ git add` adds changes from a file/directory (including new files) to commit, essentially staging a commit
@@ -59,6 +56,5 @@ After completing the above steps, you are all done with the setup directory! Hea
     * `$ git status` lists all the changes of your local repo from that on Github, including which ones are added committed, or neither
 * Note: always make sure to pull any changes from Github before editing your local repo and pushing
 
-<h2>readme.md</h2>
-
+### [readme.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/readme.md)
 * This file
