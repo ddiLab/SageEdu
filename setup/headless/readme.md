@@ -35,9 +35,6 @@ Headless mode does not require a monitor, mouse, or keyboard to be connected to 
 ### [setup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/headless/setup.md)
   * This contains instructions on how to perform the basic initial setup of the Nano
 
-### [jupyter.md](https://github.com/ddiLab/SageEdu/blob/main/setup/headless/jupyter.md)
-  * This contains instructions on how to install and run jupyter notebooks on the Nano
-
 ### [screen.md]()
   * This contains instructions on how to install and use the Screen application on the Nano
 
