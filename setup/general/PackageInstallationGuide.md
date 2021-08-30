@@ -39,7 +39,8 @@ If anywhere throughout this repository a package needs to be installed, it will 
 ## Sample Enviornment Setup
 To create a virtual enviornment with all the packages you need to work through the tutorials for using any of the sensors simply run the folloing command from the `/setup/general/` directory:  
     `bash generalEnvi.sh`  
-    * If you want to set everything up on your own, open up the `/setup/general/generalEnvi.sh` file and take a look at what it's doing. If something in that file seems confusing, reread this document or take a look at the [Python Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md).
+    
+* If you want to set everything up on your own, open up the `/setup/general/generalEnvi.sh` file and take a look at what it's doing. If something in that file seems confusing, reread this document or take a look at the [Python Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md).
 
 You can activate the virtual enviornment by running:  
     `source generalEnvi/bin/activate`
