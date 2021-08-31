@@ -9,4 +9,4 @@ The black wire should connect to the ground pin and the red wire should connect 
 
 ## Now the enviornmental sensor is all setup!
 
-See `enviSensor/enviSensorDemo.ipynb` for more information on the sensor including how to interact with it using Python.
+Read the [BME680 breakout documentation](https://learn.pimoroni.com/tutorial/sandyj/getting-started-with-bme680-breakout) to learn how to interact with the sensor, then see the `enviSensor/enviSensorDemo.ipynb` notebook.
