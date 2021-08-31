@@ -3,6 +3,8 @@
 This directory contains instructions on how to set up your Jetson Nano in headless mode.  
 Headless mode does not require a monitor, mouse, or keyboard to be connected to the nano. All you need is another computer!
 
+**Start by reading the [setup instructions](https://github.com/ddiLab/SageEdu/blob/main/setup/headless/setup.md)!**
+
 ---
 
 ## Useful Stuff
