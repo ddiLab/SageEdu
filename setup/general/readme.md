@@ -6,7 +6,8 @@ Follow them in this order:
 
 1. [pythonSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md)
 2. [githubSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/githubSetup.md)
-3. [PackageInstallationGuide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md)  
+3. [PackageInstallationGuide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md)
+4. [JupyterNotebookSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupyterNotebookSetup.md)
   
 After completing the above steps, you are all done with the setup directory! Head back to the [main page](https://github.com/ddiLab/SageEdu).
 

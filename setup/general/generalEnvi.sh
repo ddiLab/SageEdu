@@ -1,25 +1,33 @@
-# ! Run this from within the SageEdu/setup/general directory !
-
-# Virtual enviornment setup
-virtualenv ../../generalEnvi
-source ../../generalEnvi/bin/activate
+#!/bin/sh
 
 # Updating pip
 python3 -m pip install --upgrade pip
 
 # Jupyter Notebook
-python3 -m pip install --upgrade notebook
+pip install notebook
 
 # Required for creating plots
-python3 -m pip install --upgrade matplotlib
+pip install matplotlib
 
 # Libaries required for camera
-python3 -m pip install --upgrade opencv-python
-python3 -m pip install --upgrade Pillow
+pip install opencv-python
+pip install Pillow
 
 # Libaries required for enviornmental sensor
-python3 -m pip install --upgrade bme680
-python3 -m pip install --upgrade numpy
+pip install bme680
+pip install numpy
 
 # Required for microphone
-python3 -m pip install --upgrade scipy
+pip install scipy
+pip install sounddevice
+
+# Install Linux Packages
+## exit out of environment
+deactivate
+
+## camera setup
+sudo apt-get install network-manager -y
+sudo apt-get install tshark -y
+
+## microphone setup
+sudo apt-get install libportaudio2 -y

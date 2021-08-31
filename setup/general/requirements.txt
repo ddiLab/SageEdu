@@ -1,8 +1,0 @@
-# packages excluding pywaggle, jupyter, and audio analysis pacakges
-opencv-python
-image
-matplotlib
-bme680
-scipy
-sounddevice
-colorama
