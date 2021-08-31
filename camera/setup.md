@@ -46,4 +46,4 @@
 
 ## Now the camera is all setup!
 
-See the `camera/Stream.ipynb` and `camera/WaggleStream.ipynb` notebbooks to learn how to stream video from the camera using Python.
+See the `camera/Stream.ipynb` notebook then the `camera/WaggleStream.ipynb` notebook to learn how to stream video from the camera using Python.
