@@ -7,7 +7,7 @@ Start with the [setup instructions](https://github.com/ddiLab/SageEdu/blob/main/
 
 ## Directory Contents
 
-### [setup](https://github.com/ddiLab/SageEdu/blob/main/microphone/setup.md)
+### [setup.md](https://github.com/ddiLab/SageEdu/blob/main/microphone/setup.md)
 * Instructions on setting up the microphone 
 
 ### [ReadRecordAudio.ipynb](https://github.com/ddiLab/SageEdu/blob/main/microphone/ReadRecordAudio.ipynb)

@@ -16,10 +16,10 @@ After completing the above steps, you are all done with the setup directory! Hea
 
 ## Directory Contents
 
-### [generalEnvi.sh](https://github.com/ddiLab/SageEdu/blob/main/setup/general/linux_packages.sh)
+### [generalEnvi.sh](https://github.com/ddiLab/SageEdu/blob/main/setup/general/generalEnvi.sh)
 * Shell program that further customizes the base environment (`base_env`) to make it workable with the `camera, microphone, enviSensor` directories
 
-### [JupyterNotebookSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupterNotebookSetup.md)
+### [JupyterNotebookSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupyterNotebookSetup.md)
 * Contains instructions on how to set up Jupyter Notebook
 
 ### [jupyterNotebookTutorial.ipynb](https://github.com/ddiLab/SageEdu/blob/main/setup/general/jupyterNotebookTutorial.ipynb)
