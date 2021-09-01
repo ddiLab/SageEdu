@@ -36,9 +36,9 @@ If anywhere throughout this repository a package needs to be installed, it will 
 * **Listing:**
     * `pip freeze` show every installed package in the environment and their versions
 
-## General Enviornment Setup
+## Base Enviornment Customization
 **Before proceeding, make sure to have completed the instructions in `/setup/general/pythonSetup.md`**   
-To customize your current virtual enviornment with all the packages you need to follow the tutorials any of the sensors simply run the following command **within** your environment:  
+To customize your current virtual enviornment with all the packages you need to follow the tutorials of the sensors, simply run the following command **within** your base environment **in** the current directory (`setup/general`):  
     `bash generalEnvi.sh`  
 
 Note: that command will exit you of your virtual environment   
@@ -49,7 +49,7 @@ Note: that command will exit you of your virtual environment
 **Next read the [Jupyter Notebook Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupterNotebookSetup.md) to learn how to get started using jupyter notebooks!**
    
 ---
-
+**Section below can be archived in the final version**
 ### Specific packages
 As opposed to linux packages, it's advisable to install every package included in the `requirements.txt` file (found in the current directory) and the ones below because there are no other instructions in this repository on how to install them.
 * **Important:** Since manging dependency issues with python packages is more troublesome than linux packages, `stable_requirements.txt` has also been included in this directory to eliminate this problem; it includes every extensively tested package and its version used throughout this repository. If there are installation errors or python errors with modules, **only** install pywaggle first, followed by `stable_requirements.txt` with`pip install -r stable_requirements.txt`. 

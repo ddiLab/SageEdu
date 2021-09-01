@@ -1,10 +1,14 @@
 # Microphone
 
-This directory contains instructions on how to set up the microphone with the Jetson Nano along with some example code/notebooks.
+This directory contains instructions on how to set up the microphone with the Jetson Nano along with some example code/notebooks.  
+Start with the [setup instructions](https://github.com/ddiLab/SageEdu/blob/main/microphone/setup.md). Then, feel free to explore the notebooks and directory!
 
 ---
 
 ## Directory Contents
+
+### [setup](https://github.com/ddiLab/SageEdu/blob/main/microphone/setup.md)
+* Instructions on setting up the microphone 
 
 ### [ReadRecordAudio.ipynb](https://github.com/ddiLab/SageEdu/blob/main/microphone/ReadRecordAudio.ipynb)
 * Instructions and code demonstrating how to read and record WAV files
@@ -14,10 +18,7 @@ This directory contains instructions on how to set up the microphone with the Je
 
 ### [CommandsVideoAudio.ipynb](https://github.com/ddiLab/SageEdu/blob/main/microphone/CommandsVideoAudio.ipynb)
 * A notebook that runs shell commands that can record an MP4 video from the camera and grab just audio from the camera using ffmpeg
-
-### [pyAudioAnalysisIntroduction.ipynb](https://github.com/ddiLab/SageEdu/blob/main/microphone/pyAudioAnalysisIntroduction.ipynb)
-* A notebook that contains instructions and code in using the `pyAudioAnalysis` library
-* Includes feature extraction, beat detection, and visualization with spectrograms and chromagrams
+* Make sure to have completed the set up instructions for the camera first!
 
 ### [audio_files/](https://github.com/ddiLab/SageEdu/tree/main/microphone/audio_files)
 * Directory contains audio files used in the notebooks within this directory

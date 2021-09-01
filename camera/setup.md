@@ -44,6 +44,4 @@
     1. The important part of this is the very last number, after the words "ARP for".  
     This is the IP adress of the camera. Make note of this, as you will need this to stream video from it.
 
-## Now the camera is all setup!
-
-See the `camera/Stream.ipynb` notebook then the `camera/WaggleStream.ipynb` notebook to learn how to stream video from the camera using Python.
+**Now the camera is all setup!**

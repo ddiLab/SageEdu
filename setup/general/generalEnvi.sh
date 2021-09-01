@@ -1,5 +1,7 @@
 #!/bin/sh
 
+
+echo installing python packages:
 # Updating pip
 python3 -m pip install --upgrade pip
 
@@ -21,6 +23,15 @@ pip install numpy
 pip install scipy
 pip install sounddevice
 
+# install pywaggle
+mkdir ../../../pywaggle
+git clone https://github.com/waggle-sensor/pywaggle ../../../pywaggle
+pip install ./pywaggle[dev]
+ # optional rm pywaggle
+
+echo success!
+
+echo installing linux packages:
 # Install Linux Packages
 ## exit out of environment
 deactivate
@@ -31,3 +42,6 @@ sudo apt-get install tshark -y
 
 ## microphone setup
 sudo apt-get install libportaudio2 -y
+
+echo success!
+

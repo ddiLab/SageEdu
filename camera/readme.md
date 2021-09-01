@@ -1,11 +1,13 @@
 # Camera
 
-This directory contains instructions on how to set up the camera with the Jetson Nano along with some example code.
+This directory contains instructions on how to set up the camera with the Jetson Nano along with some example code.   
+Start with [setup.md](https://github.com/ddiLab/SageEdu/blob/main/camera/setup.md). And then, feel free to explore the notebooks and directory!
 
 ---
 ## Directory Contents:
 
 ### [setup.md](https://github.com/ddiLab/SageEdu/blob/main/camera/setup.md)
+
 * Contains instructions on how to setup the camera with the Nano
 
 ### [Stream.ipynb](https://github.com/ddiLab/SageEdu/blob/main/camera/Stream.ipynb)

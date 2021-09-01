@@ -8,6 +8,7 @@ Follow them in this order:
 2. [githubSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/githubSetup.md)
 3. [PackageInstallationGuide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md)
 4. [JupyterNotebookSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupyterNotebookSetup.md)
+5. [jupyterNotebookTutorial](https://github.com/ddiLab/SageEdu/blob/main/setup/general/jupyterNotebookTutorial.ipynb)
   
 After completing the above steps, you are all done with the setup directory! Head back to the [main page](https://github.com/ddiLab/SageEdu).
 
@@ -15,40 +16,24 @@ After completing the above steps, you are all done with the setup directory! Hea
 
 ## Directory Contents
 
-### [linux_packages.sh](https://github.com/ddiLab/SageEdu/blob/main/setup/general/linux_packages.sh)
-* Shell program that installs linux packages
-* Before proceeding, refer to `PackageInstallationGuide.md` first
-
-### [requirements.txt](https://github.com/ddiLab/SageEdu/blob/main/setup/general/requirements.txt)
-* Text file that contains the necessary python packages for this repository
-* Before proceeding, refer to `PackageInstallationGuide.md` first
-
-### [stable_requirements.txt](https://github.com/ddiLab/SageEdu/blob/main/setup/general/stable_requirements.txt)
-* Text file that contains a list of python pacakges and their versions for installation
-* These specific pacakges have been extensively tested in the creation of this repository and should serve as a fail-safe for dependency issues
-* Before proceeding, refer to `PackageInstallationGuide.md` first
-
-### [AudioLibrariesSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/AudioLibrariesSetup.md)
-* Contains instructions on how to install the pyAudioAnalysis and Librosa python audio analysis libraries
-* Before proceeding, refer to `PackageInstallationGuide.md` first
+### [generalEnvi.sh](https://github.com/ddiLab/SageEdu/blob/main/setup/general/linux_packages.sh)
+* Shell program that further customizes the base environment (`base_env`) to make it workable with the `camera, microphone, enviSensor` directories
 
 ### [JupyterNotebookSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupterNotebookSetup.md)
 * Contains instructions on how to set up Jupyter Notebook
-* Before proceeding, refer to `PackageInstallationGuide.md` first
 
 ### [jupyterNotebookTutorial.ipynb](https://github.com/ddiLab/SageEdu/blob/main/setup/general/jupyterNotebookTutorial.ipynb)
 * A Jupyter Notebook with instructions on how to use Jupyter Notebooks
 
 ### [PackageInstallationGuide.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/PackageInstallationGuide.md)
-* Contains instructions on how to properly install linux and python packages
-* **A must read**
+* Contains instructions on how to properly install linux and python packages for the current repository
 
 ### [pythonSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md)
-* Contains the necessary steps to install python and create a virtual environment
+* Contains the necessary steps to install python and create the base virtual environment
 * To reiterate, everything can be done with a virtual environment as working without one, but always make sure to install packages with `pip install ...`and not `sudo ...` within the virtual environment. 
 
 ### [githubSetup.md](https://github.com/ddiLab/SageEdu/blob/main/setup/general/githubSetup.md)
-* Includes instructions on how to create a local repository from Github
+* Includes instructions on how to create a local repository from Github by cloning the current repo
 * Some useful git commands to use:
     * `$ git add` adds changes from a file/directory (including new files) to commit, essentially staging a commit
     * `$ git commit -m "[Commit Message]"` commits the changes of a file/directory, preparing them to be sent to Github
