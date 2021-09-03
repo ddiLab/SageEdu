@@ -42,3 +42,6 @@ Before you proceed, it's important to mention:
 8. Run `pip install librosa`
 9. Note: installing librosa is now available in any virtual environment with the root changes implemented above
 10. Refer to the library's [website](https://librosa.org) for more information
+
+
+**Next look at the [pyAudioAnalysis tutorial](https://github.com/ddiLab/SageEdu/blob/main/projects/AC_Detector/pyAudioAnalysisIntroduction.ipynb)**
