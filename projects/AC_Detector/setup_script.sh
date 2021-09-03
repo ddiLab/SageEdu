@@ -16,12 +16,11 @@ sudo apt-get install gcc gfortran python3-dev libopenblas-dev liblapack-dev libf
 source AC_Det/bin/activate
 
 ## install pyAudioAnalysis
-git clone https://github.com/tyiannak/pyAudioAnalysis.git
-cd pyAudioAnalysis/
-pip install -r requirements.txt
-pip install -e .
-cd ..
-# option to remove it sudo rm -rf pyAudioAnalysis
+mkdir ../../../pyAudioAnalysis
+git clone https://github.com/tyiannak/pyAudioAnalysis.git ../../../pyAudioAnalysis
+pip install -r ../../../pyAudioAnalysis/requirements.txt
+pip install -e ../../../pyAudioAnalysis/.
+### installs specific version of pyAudio Analysis: pip install -e git+https://github.com/tyiannak/pyAudioAnalysis.git@944f1d777bc96717d2793f257c3b36b1acf1713a#egg=pyAudioAnalysispycparser==2.20
 
 ## confirmation
 echo Install successful!

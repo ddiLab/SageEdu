@@ -26,7 +26,7 @@ pip install sounddevice
 # install pywaggle
 mkdir ../../../pywaggle
 git clone https://github.com/waggle-sensor/pywaggle ../../../pywaggle
-pip install ./pywaggle[dev]
+pip install ../../../pywaggle[dev]
  # optional rm pywaggle
 
 echo success!
