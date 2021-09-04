@@ -46,7 +46,7 @@ Note: that command will exit you of your virtual environment
 * If you want to set everything up on your own, open up the `/setup/general/generalEnvi.sh` file and take a look at what it's doing. If something in that file seems confusing, reread this document or take a look at the [Python Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md).
 
     
-**Next read the [Jupyter Notebook Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupterNotebookSetup.md) to learn how to get started using jupyter notebooks!**
+**Next read the [Jupyter Notebook Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupyterNotebookSetup.md) to learn how to get started using jupyter notebooks!**
    
 ---
 **Section below can be archived in the final version**
