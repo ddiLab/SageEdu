@@ -4,6 +4,7 @@
 echo Creating virtual environment for AC detector project
 # set up base VE
 pip freeze > reqs.txt
+deactivate
 virtualenv AC_Det
 source AC_Det/bin/activate
 python3 -m pip install --upgrade pip
