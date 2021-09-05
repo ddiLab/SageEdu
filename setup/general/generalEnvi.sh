@@ -1,5 +1,6 @@
-#!/bin/sh
+#!/sh
 
+# run this script using source
 
 echo installing python packages:
 # Updating pip
@@ -27,13 +28,13 @@ pip install sounddevice
 mkdir ../../../pywaggle
 git clone https://github.com/waggle-sensor/pywaggle ../../../pywaggle
 pip install ../../../pywaggle[dev]
- # optional rm pywaggle
 
 echo success!
 
 echo installing linux packages:
 # Install Linux Packages
-## exit out of environment
+
+## exit environment
 deactivate
 
 ## camera setup
@@ -42,6 +43,9 @@ sudo apt-get install tshark -y
 
 ## microphone setup
 sudo apt-get install libportaudio2 -y
+
+## reactivate environment
+source ../../../base_env/bin/activate
 
 echo success!
 

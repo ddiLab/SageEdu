@@ -38,11 +38,10 @@ If anywhere throughout this repository a package needs to be installed, it will 
 
 ## Base Enviornment Customization
 **Before proceeding, make sure to have completed the instructions in `/setup/general/pythonSetup.md`**   
-To customize your current virtual enviornment with all the packages you need to follow the tutorials of the sensors, simply run the following command **within** your base environment **in** the current directory (`setup/general`):  
-    `bash generalEnvi.sh`  
+To customize your current virtual enviornment with all the packages you need to follow the tutorials of the sensors, simply run the following command **within** your base environment **inside** the current directory (`setup/general`):  
+    `source generalEnvi.sh`  
 
-Note: that command will exit you of your virtual environment   
-
+* The script will require your password at some point
 * If you want to set everything up on your own, open up the `/setup/general/generalEnvi.sh` file and take a look at what it's doing. If something in that file seems confusing, reread this document or take a look at the [Python Setup Guide](https://github.com/ddiLab/SageEdu/blob/main/setup/general/pythonSetup.md).
 
     

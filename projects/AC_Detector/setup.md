@@ -7,7 +7,8 @@ Before you proceed, it's important to mention installation of pyAudioAnalysis co
 The following will take you through executing a script that will set up everything necessary for this project: 
 1. run the script `setup_script.sh` from **within** the base environment created in the `SageEdu/setup/general` instructions and **inside** the current directory (`SageEdu/projects/AC_Detector`)
  1. it will automatically execute all the steps in the two sections below, creating a virtual environment, installing pyAudioAnalysis, extra packages, and cloning the repo of pyAudioAnalysis to the parent directory that houses your base virtual environment, pywaggle, and SageEdu directories.
- 2. command: `bash setup_script.sh`
+ 2. command: `source setup_script.sh`
+ 3. The script will require you to enter your password at some point
 
 And of course, feel free to take a look at what the script does! There are some commented lines for clarity and an alternative way to install pyAudioAnalysis.
 
@@ -15,10 +16,11 @@ And of course, feel free to take a look at what the script does! There are some 
 1. Make sure the system is up-to-date
 2. Install every python package from the base environment to the project 1 environment that will be created
  1. copy those packages with `pip freeze > reqs.txt`
- 2. create the project 1 virtual environment with `virtualenv project1`
+ 2. create the project 1 virtual environment with `virtualenv AC_Detector_env`
  3. activate it and upgrade pip with `source project1/bin/activate` and `python3 -m pip install --upgrade pip`
  4. install the stored required python packages with `pip install -r reqs.txt`
  5. delete that file because it is no longer needed with `rm reqs.txt`
+ 6. These steps will create a virtual environment folder in the directory that includes the base environment folder, pywaggle, and pyAudioAnalaysis
 
 ## install pyAudioAnalysis
 1. Deactivate the virtual environment
