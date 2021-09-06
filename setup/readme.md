@@ -2,7 +2,7 @@
 
 This directory contains instructions on how to perform the initial set up of the Jetson Nano.
 
-The setup can be performed in either headful or headless modes. The mode you decide to use for the setup is not binding. Once the Nano is setup you can switch between headfull and headless modes as you wish. Now, get started with either one:
+The setup can be performed in either headful or headless modes. The mode you decide to use for the setup is not binding. Once the Nano is setup you can switch between headful and headless modes as you wish. Now, get started with either one:
 
 ### [Headful Mode](https://github.com/ddiLab/SageEdu/tree/main/setup/headful)
 Requires the use of a monitor, keyboard, mouse, and another computer. 

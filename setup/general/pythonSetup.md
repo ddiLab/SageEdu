@@ -11,7 +11,7 @@ These instructions will walk you through installing python and creating a virtua
     `$ python3 -m pip install --upgrade pip`
 4. Install the ability to construct a virtual environment by running:  
     `$ sudo -H pip3 install virtualenv`
-5. Create a directory on your computer related to all project tasks (e.g., `Workspace/`). This directory will store your virtual environment and current Github repo
+5. Create a directory on your computer related to all project tasks (e.g., `Workspace/`). This directory will store your base virtual environment, SageEdu Github repo, future virtual environments and GitHub repositories. 
 6. Use the command `$ virtualenv ./base_env` within `Workspace/`, where `base_env` is the name of the virtual environment. **Keep that virtual environment name, and this will be known as the base environment**
 	1. **Important:** Do not ever edit this folder
 7. Activate the environment with the command:  
@@ -33,6 +33,6 @@ These instructions will walk you through installing python and creating a virtua
 
 You now have a working virtual environment to use throughout the `camera, microphone, and enviSensor` directories! And you can create countless more following steps 2 & 5-8!
 
-**Important:** Never install packages using `(base_env)user@host:~$ sudo ...` commands within the virtual environment because it will cause dependency issues, so instead, install packages with `(base_env)user@host:~$ pip install ...` or any other way that does not run root permissions within the virtual environment (e.g., `(base_env)user@host:~$ python3 -m pip install ...`). If it's necessary to install something to root, do so outside of the virtual environment (e.g., installing tshark, libportaudio2). Though, this may require you to run the program outside of the virtual environment. If in doubt, look up what each part of a command does. Everything that can be done by a system setup can be done within a virtual environment. Just make sure to intall the appropriate packages correctly.
+**Important:** Never install packages using `sudo ...` commands within the virtual environment because it will cause dependency issues, so instead, install packages with `pip install ...` or any other way that does not run root permissions within the virtual environment (e.g., `python3 -m pip install ...`). If it's necessary to install something to root, do so outside of the virtual environment (e.g., installing tshark, libportaudio2). Though, this may require you to run the program outside of the virtual environment. If in doubt, look up what each part of a command does. Everything that can be done by a system setup can be done within a virtual environment. Just make sure to install the appropriate packages correctly.
 
 **Next read the [GitHub setup instructions](https://github.com/ddiLab/SageEdu/blob/main/setup/general/githubSetup.md).**
