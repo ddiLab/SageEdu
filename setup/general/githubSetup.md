@@ -2,7 +2,7 @@
 
 These instructions will walk you through cloning this repository onto your Nano. The same instructions can be applied to cloning any other repository on GitHub.
 
-1. Create a directory on the computer to store the repository and enter it. Preferably, use the same one where the virtual environment directory is stored (e.g., `/Workspace`)
+1. Create a directory on the computer to store the repository and enter it. Preferably, use the same one where the virtual environment directory is stored (e.g., `Workspace/`)
 2. Go to the "<> Code" section of [this repository](https://github.com/ddiLab/SageEdu)
 3. Select the green box marked with the install logo and "Code" next to it
 4. Go to "HTTPS" and copy the URL:  
