@@ -6,23 +6,8 @@ echo installing python packages:
 # Updating pip
 python3 -m pip install --upgrade pip
 
-# Jupyter Notebook
-pip install jupyter
-
-# Required for creating plots
-pip install matplotlib
-
-# Libaries required for camera
-pip install opencv-python
-pip install Pillow
-
-# Libaries required for enviornmental sensor
-pip install bme680
-pip install numpy
-
-# Required for microphone
-pip install scipy
-pip install sounddevice
+# install packages from requirements file
+pip install -r requirements.txt
 
 # install pywaggle
 mkdir ../../../pywaggle

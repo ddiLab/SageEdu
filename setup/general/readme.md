@@ -16,6 +16,9 @@ After completing the above steps, you are all done with the setup directory! Hea
 
 ## Directory Contents
 
+### [requirements.txt](https://github.com/ddiLab/SageEdu/blob/main/setup/general/requirements.txt)
+* List of python packages installed by `generalEnvi.sh` with specific versions
+
 ### [generalEnvi.sh](https://github.com/ddiLab/SageEdu/blob/main/setup/general/generalEnvi.sh)
 * Shell program that further customizes the base environment (`base_env`) to make it workable with the `camera, microphone, enviSensor` directories
 
