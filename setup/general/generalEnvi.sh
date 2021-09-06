@@ -7,7 +7,7 @@ echo installing python packages:
 python3 -m pip install --upgrade pip
 
 # Jupyter Notebook
-pip install notebook
+pip install jupyter
 
 # Required for creating plots
 pip install matplotlib
