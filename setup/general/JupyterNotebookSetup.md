@@ -5,10 +5,11 @@ If you don't see the jupyter package listed, see the [Package Installation Guide
 
 ---
 
-## Headfull Mode
+## Headful Mode
 1. Start a jupyter notebook server by running the command  
     `jupyter notebook`
 2. This will start up a browser and display a Jupyter Notebook
+3. Refer to the instructions at the bottom if you receive errors in the terminal
 
 ## Headless Mode
 1. Start a Jupyter Notebook by running the following command:  
@@ -28,7 +29,7 @@ If you don't see the jupyter package listed, see the [Package Installation Guide
 
 ---
 
-### How to deal with the error "Error: Can't initialize nvrm channel" :
+### How to deal with the error "Error: Can't initialize nvrm channel" in Headful Mode:
 1. Exit all browsers and type "Ctrl + C" in the terminal to exit out of the notebook
-2. Once Jupyter Notebook is no longer running, open a browser window, make that browser the default browser, and rerun the command from step 3 
-3. Note: It might be that a window from the default browser must always be open before opening Jupyter Notebook
+2. Once Jupyter Notebook is no longer running, open a browser window, make that browser the default browser, and rerun the command from step 1
+3. Note: It's possible that a window from the default browser must always be open before starting Jupyter Notebook
