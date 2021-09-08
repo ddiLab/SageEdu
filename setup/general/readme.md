@@ -10,7 +10,7 @@ Follow them in this order:
 4. [JupyterNotebookSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupyterNotebookSetup.md)
 5. [jupyterNotebookTutorial](https://github.com/ddiLab/SageEdu/blob/main/setup/general/jupyterNotebookTutorial.ipynb)
   
-After completing the above steps, you are all done with the setup directory! Head back to the [main page](https://github.com/ddiLab/SageEdu).
+After completing the above steps, you are all done with the setup directory! Head back to the [main page](https://github.com/ddiLab/SageEdu) to explore the other directories!
 
 ---
 
