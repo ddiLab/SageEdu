@@ -1,14 +1,14 @@
-# Instructions on setting up for project 1 -- an AC Detector
-These instructions include the creation of a virtual environment solely for this project and installation of an audio analysis library   
+# Instructions on setting up environment for an AC Detector
+These instructions include the creation of a virtual environment solely for this project and installation of an audio analysis library.   
 
 Before you proceed, it's important to mention installation of pyAudioAnalysis could take upwards of two hours
 
 ## automated process
 The following will take you through executing a script that will set up everything necessary for this project: 
 1. run the script `setup_script.sh` from **within** the base environment created in the `SageEdu/setup/general` instructions and **inside** the current directory (`SageEdu/projects/AC_Detector`)
- 1. it will automatically execute all the steps in the two sections below, creating a virtual environment, installing pyAudioAnalysis, extra packages, and cloning the repo of pyAudioAnalysis to the parent directory that houses your base virtual environment, pywaggle, and SageEdu directories.
+ 1. it will automatically execute all the steps in the two sections below: creating a virtual environment, installing pyAudioAnalysis, extra packages, and cloning the repo of pyAudioAnalysis to the parent directory that houses your base virtual environment, pywaggle, and SageEdu directories.
  2. command: `source setup_script.sh`
- 3. The script will require you to enter your password at some point
+ 3. the script will require you to enter your password at some point
 
 And of course, feel free to take a look at what the script does! There are some commented lines for clarity and an alternative way to install pyAudioAnalysis.
 
