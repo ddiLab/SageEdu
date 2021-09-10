@@ -7,7 +7,7 @@ pip freeze > reqs.txt
 deactivate
 virtualenv ../../../AC_Detector_env
 source ../../../AC_Detector_env/bin/activate
-python3 -m pip install --upgrade pip
+pip install pip==21.2.4 setuptools==57.4.0 wheel==0.36.2
 pip install -r reqs.txt
 rm reqs.txt
 
@@ -21,12 +21,12 @@ source ../../../AC_Detector_env/bin/activate
 echo installing pyAudioAnalysis
 mkdir ../../../pyAudioAnalysis
 git clone https://github.com/tyiannak/pyAudioAnalysis.git ../../../pyAudioAnalysis
-pip install -r ../../../pyAudioAnalysis/requirements.txt
-echo feel free to ignore the error above because it only causes problems when using python 3.7+ with the tensorflow library in image analysis
-### install opencv-python==4.4.0.46 if errors do occur 
-
-pip install -e ../../../pyAudioAnalysis/.
-### installs specific version of pyAudio Analysis: pip install -e git+https://github.com/tyiannak/pyAudioAnalysis.git@944f1d777bc96717d2793f257c3b36b1acf1713a#egg=pyAudioAnalysispycparser==2.20
+cd ../../../pyAudioAnalysis
+git reset --hard 03c3fb5f8a7d2c4db2ae9c3155e7741faeab12e1
+pip install -r requirements.txt
+echo feel free to ignore the possible error above because it only causes problems when using python 3.7+ with the tensorflow library in image analysis. Install opencv-python==4.4.0.46 if errors do occur
+pip install -e .
+cd ../SageEdu/projects/AC_Detector
 
 ## confirmation
 echo Install successful!
