@@ -1,7 +1,7 @@
 # Instructions on setting up environment for an AC Detector
 These instructions include the creation of a virtual environment solely for this project and installation of an audio analysis library.   
 
-Before you proceed, it's important to mention installation of pyAudioAnalysis could take upwards of two hours
+Before you proceed, it's important to mention installation of pyAudioAnalysis could take upwards of **two hours** due to the building of the scipy and scikit-learn wheels.
 
 ## automated process
 The following will take you through executing a script that will set up everything necessary for this project: 
@@ -18,7 +18,7 @@ And of course, feel free to take a look at what the script does! There are some 
  1. copy those packages with `pip freeze > reqs.txt`
  2. create the project 1 virtual environment with `virtualenv AC_Detector_env`
  3. activate it with `source project1/bin/activate` 
- 4. install specific versions of pip, setuptools, and wheel with `pip install pip==21.2.4 setuptools==57.4.0 wheel==0.36.2`
+ 4. install specific versions of pip, setuptools, and wheel with `pip install pip==21.2.4 setuptools==57.4.0 wheel==0.37.0`
  5. install the stored required python packages with `pip install -r reqs.txt`
  6. delete that file because it is no longer needed with `rm reqs.txt`
  7. These steps will create a virtual environment folder in the directory that includes the base environment folder, pywaggle, and pyAudioAnalaysis

@@ -7,7 +7,7 @@ pip freeze > reqs.txt
 deactivate
 virtualenv ../../../AC_Detector_env
 source ../../../AC_Detector_env/bin/activate
-pip install pip==21.2.4 setuptools==57.4.0 wheel==0.36.2
+pip install pip==21.2.4 setuptools==57.4.0 wheel==0.37.0
 pip install -r reqs.txt
 rm reqs.txt
 
