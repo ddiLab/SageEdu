@@ -1,7 +1,9 @@
 # Camera
 
 This directory contains instructions on how to set up the camera with the Jetson Nano along with some example code.   
-Start with [setup.md](https://github.com/ddiLab/SageEdu/blob/main/camera/setup.md). And then, feel free to explore the notebooks and directory!
+Start with [setup.md](https://github.com/ddiLab/SageEdu/blob/main/camera/setup.md), followed by the [Stream](https://github.com/ddiLab/SageEdu/blob/main/camera/Stream.ipynb) and [WaggleStream](https://github.com/ddiLab/SageEdu/blob/main/camera/WaggleStream.ipynb) notebooks. Or, feel free to check out the notebooks and directory in your own order!   
+    
+Afterwards, head back to the [main page](https://github.com/ddiLab/SageEdu) to explore the [microphone](https://github.com/ddiLab/SageEdu/tree/main/microphone), [enviSensor](https://github.com/ddiLab/SageEdu/tree/main/enviSensor), and [projects](https://github.com/ddiLab/SageEdu/tree/main/projects) directories.
 
 ---
 ## Directory Contents:

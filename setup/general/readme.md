@@ -10,11 +10,14 @@ Follow them in this order:
 4. [JupyterNotebookSetup](https://github.com/ddiLab/SageEdu/blob/main/setup/general/JupyterNotebookSetup.md)
 5. [jupyterNotebookTutorial](https://github.com/ddiLab/SageEdu/blob/main/setup/general/jupyterNotebookTutorial.ipynb)
   
-After completing the above steps, you are all done with the setup directory! Head back to the [main page](https://github.com/ddiLab/SageEdu).
+After completing the above steps, you are all done with the setup directory! Feel free to go back to the [main page](https://github.com/ddiLab/SageEdu) to explore the [camera](https://github.com/ddiLab/SageEdu/tree/main/camera), [microphone](https://github.com/ddiLab/SageEdu/tree/main/microphone), [enviSensor](https://github.com/ddiLab/SageEdu/tree/main/enviSensor), and [projects](https://github.com/ddiLab/SageEdu/tree/main/projects) directories.
 
 ---
 
 ## Directory Contents
+
+### [requirements.txt](https://github.com/ddiLab/SageEdu/blob/main/setup/general/requirements.txt)
+* List of python packages installed by `generalEnvi.sh` with specific versions
 
 ### [generalEnvi.sh](https://github.com/ddiLab/SageEdu/blob/main/setup/general/generalEnvi.sh)
 * Shell program that further customizes the base environment (`base_env`) to make it workable with the `camera, microphone, enviSensor` directories

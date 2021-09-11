@@ -44,4 +44,4 @@
     1. The important part of this is the very last number, after the words "ARP for".  
     This is the IP adress of the camera. Make note of this, as you will need this to stream video from it.
 
-**Now the camera is all setup!**
+**The camera is all setup!**

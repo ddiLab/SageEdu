@@ -9,19 +9,20 @@
  8. Add a jumper to those pins, so it allows power through the DC cable <img alt='Jumper'  src='./images/DCJumper.jpg'></img>
  9. Connect the USB Wi-Fi adapter <img alt='WIFI'  src='./images/WIFI.jpg'></img>
  10. Once the jumper is in the correct position, plug in the 1 = DC cable, 2 = monitor, 3 = mouse and keyboard <img alt='hardware'  src='./images/externalParts.jpg'></img>
- 11. Follow the [Initial Setup with Display Attached](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup-display) instructions under the [Setup and First Boot](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup) module from Nvida's website
+ 11. Follow the [Initial Setup with Display Attached](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup-display) instructions under the [Setup and First Boot](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit#setup) module from Nvida's website, or the steps below:
 	 1. Review and accept NVIDIA Jetson software EULA
 	 2. Select system language and keyboard layout
 	 3. Connect to the desired Wi-Fi connection and select your time zone
 	 4. Create username, password, and computer name
-	 5. Select APP partition size, leave this to the default value
-	 6. Select Nvpmodel Mode, keep the default setting here as well
+	 5. Select APP partition size; leave this to the default value
+	 6. Select Nvpmodel Mode; keep the default setting here as well
 12. At initial login screen, restart the system to allow additional installation (select "Shut Down..." from the gearbox on the upper right of the screen)
 13. Update the software
-	1. Open the search menu (top left of the screen), type "Software Updater," and select it
-	2. If you're connected to the internet, it will show a new set of updates
-	3. Download and install the updates
-	4. Restart the system
+	1. Open the search menu (white circle with a green background on the top left of the screen)
+	2. Type "Software Updater" and select it
+	3. If you're connected to the internet, it will show a new set of updates
+	4. Download and install the updates
+	5. Restart the system
 14. You now have a working Linux environment!
 
 **Next, follow the instructions in the [general](https://github.com/ddiLab/SageEdu/tree/main/setup/general) directory to further customize the nano.**

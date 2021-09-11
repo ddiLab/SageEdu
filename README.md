@@ -8,6 +8,12 @@ This repository contains information on setting up and using a Jetson Nano with 
 Afterwards, take a look at the [camera](https://github.com/ddiLab/SageEdu/tree/main/camera), [enviSensor](https://github.com/ddiLab/SageEdu/tree/main/enviSensor), [microphone](https://github.com/ddiLab/SageEdu/tree/main/microphone), and [projects](https://github.com/ddiLab/SageEdu/tree/main/projects) directories.
 
 ---
+## Repository Flow Chart
+An overview of the instructions found in the repository.
+
+![flowchart](https://github.com/ddiLab/SageEdu/blob/main/Repo%20Flowchart.jpg)
+
+---
 
 ## Directory Contents
 
