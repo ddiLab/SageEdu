@@ -3,9 +3,6 @@
 # run this script using source
 
 echo installing python packages:
-# Updating pip
-python3 -m pip install --upgrade pip
-
 # install packages from requirements file
 pip install -r requirements.txt
 

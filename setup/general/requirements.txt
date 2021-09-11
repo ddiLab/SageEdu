@@ -61,7 +61,7 @@ smbus==1.1.post2
 SoundCard==0.4.1
 sounddevice==0.4.2
 SoundFile==0.10.3.post1
-terminado==0.11.1
+terminado==0.12.1
 testpath==0.5.0
 tornado==6.1
 traitlets==4.3.3
