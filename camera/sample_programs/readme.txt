@@ -1,4 +1,4 @@
-Readme file for initial_test_programs directory
+Readme file for sample_programs directory
 
 
 StreamWithThreading.ipynb:
