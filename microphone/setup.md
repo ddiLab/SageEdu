@@ -16,6 +16,7 @@
 
 6. If the microhpone is working then when the led is green, the microhpone is picking up noise. When it's red, the microhpone is not picking up noise
 
-  
+**If the microphone appears to not pick up any noise, make sure you follow steps 4 and 5 to enable it**
+
 **The microphone is all set up now and ready for you to use!**
   

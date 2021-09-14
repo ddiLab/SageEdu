@@ -4,15 +4,15 @@ from waggle.data.vision import Camera, BGR
 import time
 import cv2
 
-cam = Camera('rtsp://admin:1234abcd@10.42.0.126:554/cam/realmonitor?channel=1&subtype=1', BGR)
+cam = Camera('rtsp://admin:admin@10.42.0.126:554/cam/realmonitor?channel=1&subtype=1', BGR)
 
 frameCount = 1000
 stop = 0
 beg = 0
 end = 0
-#### Using python packages has not worked for me when capturing audio from the camera, saving a video with audio from the camera 
+#### Using python packages has not worked when capturing audio from the camera/saving a video with audio from the camera 
 fourcc = cv2.VideoWriter_fourcc(*'MJPG') # codec should be X264 for saving mp4 file
-out = cv2.VideoWriter('output.avi', fourcc, 20.0, (704, 480))
+out = cv2.VideoWriter('output.avi', fourcc, 20.0, (704, 480)) # only saves video without audio
 
 for sample in cam.stream():
     if (stop == frameCount):
