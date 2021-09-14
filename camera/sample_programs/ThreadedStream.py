@@ -1,3 +1,5 @@
+# helper program for StreamWithThreading.ipynb
+
 from threading import Thread
 import cv2
 class ThreadedStream:
