@@ -41,83 +41,97 @@ def get_all_readings():
                        sensor.data.humidity,
                        -1]
 
-        return reading
+        return [time_ns(), reading]
         
     else:
         # No data is available
-        return 0
+        return [time_ns(), None]
 
+def calculate_run_time(delay, max_time):
+    if (delay == 0):
+        return max_time*60, max_time//60
+
+    sections = max_time // delay
+    lost_time = max_time % delay
+    run_time = round((max_time - lost_time) / 60, 2)
+
+    return sections, run_time
 
 # Script Arguments
 burn_delay = int(sys.argv[1]) # Time between each burn-in reading - (seconds)
-burn_time  = int(sys.argv[2]) # Total burn-in time ---------------- (minutes)
+max_burn_time  = int(sys.argv[2]) # Max burn-in time ---------------- (minutes)
 run_delay  = int(sys.argv[3]) # Time between each measurment ------ (seconds)
-run_time   = int(sys.argv[4]) # Total run time -------------------- (minutes)
-file_name  = str(sys.argv[5]) # File name to save data
+max_time   = int(sys.argv[4]) # Max run time -------------------- (minutes)
+file_name  = str("collected_data/" + sys.argv[5]) # File name to save data
 
-
-# Number of seconds data has been collected
-live_time = 0
+burn_sections, burn_run_time = calculate_run_time(burn_delay, max_burn_time*60)
+sections, run_time = calculate_run_time(run_delay, max_time*60)
 
 # A 2D array where the collected data will be stored
 # First entry contains metadata
-data = [[burn_delay, burn_time, run_delay, run_time, 0]]
+data = [[burn_delay, burn_run_time, run_delay, run_time, 0]]
 
 # Sensor burn in
 print(Back.GREEN +
-      'Burnning in for ' + str(burn_time) + ' mins at ' +
+      'Burnning in for ~' + str(burn_run_time) + ' mins at ' +
       str(burn_delay) + ' sec intervals' +
       Style.RESET_ALL)
 
-while live_time < burn_time * 60:
+burn_start = time.time()
+num = 0
+while num < burn_sections:
+    burn_combined_time = (time.time() - burn_start) + burn_delay
+    if (burn_combined_time > max_burn_time*60):
+        break
+
     get_all_readings()
     time.sleep(burn_delay)
-    live_time += burn_delay
+    num += 1
 
-# Reset live_time to 0
-live_time = 0
-        
+
+# Collection of data   
 print(Back.GREEN +
-      'Collecting data for ' + str(run_time) + ' mins at ' +
+      'Collecting data for ~' + str(run_time) + ' mins at ' +
       str(run_delay) + ' sec intervals' +
       Style.RESET_ALL)
-     
-while live_time < (run_time + 1) * 60: 
-    reading  = get_all_readings()
-    if reading == 0:
+
+start = time.time()
+num = 0
+while num < sections:
+    combined_time = (time.time() - start) + run_delay
+    if (combined_time > max_time*60):
+        break 
+
+    result  = get_all_readings()
+
+    if result[1] == None:
         # No data is available
-        np.append(data, [[time_ns(),-1,-1,-1,-1]], axis=0)
         print(Fore.YELLOW +
               'Warning: No data could be collected at ' +
-              str(time_ns()) + ' seconds' +
+              str(time_ns()) + ' nanoseconds' +
               Style.RESET_ALL)
-
+        continue
     else:
-        if reading[3] == -1:
+        if result[1][3] == -1:
             print(Fore.YELLOW +
                     'Warning: Gas resistance data could not be collected at ' +
-                    str(time_ns()) + ' seconds' +
+                    str(time_ns()) + ' nanoseconds' +
                     Style.RESET_ALL)
+        else:
+            # The array with the last set of readings (result[1]) is added to
+            # the 2D array containing all the data
+            data = np.append(data, [[result[0],
+                                     result[1][0],
+                                     result[1][1],
+                                     result[1][2], 
+                                     result[1][3]]], axis=0)
             
-        # The array with the last set of readings is added to
-        # the 2D array containing all the data
-        data = np.append(data, [[time_ns(),
-                                 reading[0],
-                                 reading[1],
-                                 reading[2], 
-                                 reading[3]]], axis=0)
-            
-        print('Data collected at ' + str(time_ns()) + ' seconds') 
+            print('Data collected at ' + str(time_ns()) + ' nanoseconds') 
         
-    
-    # Increments the number of minutes data has been collected
-    live_time += run_delay
-    
-    if live_time < (run_time + 1) * 60:
-        # Waits run_delay seconds before going back to the beginning of the loop
-        # and taking the next measurement
-        time.sleep(run_delay)
-    
+    # sleeps for an amount of specified seconds
+    time.sleep(run_delay)
+    num += 1
+
 # Save all the data that was collected and stored in the data array to a file
 np.savetxt(file_name, 
            data,
