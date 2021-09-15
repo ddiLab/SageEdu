@@ -40,8 +40,9 @@
     2. Again, run the above command on root system, not in virtual environment 
     2. It should say `Capturing on 'eth0'`   
 3. Look for a line that contains the word "Amcrest," similar to this:  
-  `1 0.000000000 AmcrestT_2f:d6:78 → Broadcast    ARP 60 Gratuitous ARP for 10.42.0.54`  
+  `1 0.000000000 AmcrestT_2f:d6:78 → Broadcast    ARP 60 Gratuitous ARP for 10.42.0.126`  
     1. The important part of this is the very last number, after the words "ARP for".  
     This is the IP adress of the camera. Make note of this, as you will need this to stream video from it.
+    2. Sometimes, though, the IP address will change since the internal configuration of the camera is running DHCP. So, if any of the camera programs seem to fail unexpectedly, check the IP address of the camera again.
 
 **The camera is all setup!**

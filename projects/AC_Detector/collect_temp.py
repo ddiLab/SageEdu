@@ -1,6 +1,5 @@
 """
-This script takes readings of humidity, air pressure, temperature,
-and gas resistance and saves it to a file.
+This script takes readings of temperature and saves it to a file.
 """
 
 # Required Libraries
@@ -41,9 +40,13 @@ def get_temp():
         return [time_ns(), None]
 
 def calculate_run_time(delay, max_time):
+    if (delay == 0):
+        return max_time, max_time
+ 
     sections = max_time // delay
     lost_time = max_time % delay
     run_time = round((max_time - lost_time) / 60, 2)
+
     return sections, run_time
 
 # Script Arguments
