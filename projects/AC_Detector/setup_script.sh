@@ -24,7 +24,7 @@ git clone https://github.com/tyiannak/pyAudioAnalysis.git ../../../pyAudioAnalys
 cd ../../../pyAudioAnalysis
 git reset --hard 03c3fb5f8a7d2c4db2ae9c3155e7741faeab12e1
 pip install -r requirements.txt
-echo feel free to ignore the possible error above because it only causes problems when using python 3.7+ with the tensorflow library in image analysis. Install opencv-python==4.4.0.46 if errors do occur
+echo ALERT: feel free to ignore the, possible, error above because it only causes problems when using python 3.7+ with the tensorflow library in image analysis. Install opencv-python==4.4.0.46 if errors do occur
 pip install -e .
 cd ../SageEdu/projects/AC_Detector
 
