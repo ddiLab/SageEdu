@@ -38,7 +38,7 @@ An overview of the instructions found in the repository.
 ### [README.md](https://github.com/ddiLab/SageEdu/blob/main/README.md)
 * This file
 
-Students: Aldo Malaquias Cabrera (UChicago), Andrew Garcia (UChicago), Eric Sledge (Claflin), Joseph Katula (NIU)
-Mentors: Valerie Taylor (UChicago), Michael Papka (NIU), 
+**Students:** Aldo Malaquias Cabrera (UChicago), Andrew Garcia (UChicago), Eric Sledge (Claflin), Joseph Katula (NIU) <BR>
+**Mentors:** Valerie Taylor (UChicago), Michael Papka (NIU)
 
 This material is based upon work supported by the National Science Foundation under Grant No. OAC 1935984.
