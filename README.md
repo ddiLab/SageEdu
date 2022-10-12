@@ -1,4 +1,4 @@
-# SageEdu
+# SAGEedu
 
 ## Welcome the to the SAGE edu GitHub!
 This repository contains information on setting up and using a Jetson Nano with different sensors such as a camera, a microphone, and an environmental sensor. 
